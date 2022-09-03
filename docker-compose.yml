@@ -12,6 +12,6 @@ services:
         target: /bokupa-movie
     command: sh -c "sh entrypoint.dev.sh"
     ports:
-      - "5173:5173"
+      - "3000:3000"
     environment:
       TZ: Asia/Tokyo
