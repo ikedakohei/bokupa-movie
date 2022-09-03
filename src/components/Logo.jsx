@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 export function Logo(props) {
   return (
     <svg aria-hidden="true" viewBox="0 0 183 48" {...props}>
