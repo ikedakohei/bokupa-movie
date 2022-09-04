@@ -1,6 +1,5 @@
-import Image from 'next/future/image'
-
 import { Container } from '@/components/Container'
+import Image from 'next/future/image'
 import mainImage from '@/images/main.jpg'
 
 export function Hero() {
