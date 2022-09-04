@@ -13,10 +13,7 @@ export default function Home() {
     <>
       <Head>
         <title>ボクらのホームパーティー</title>
-        <meta
-          name="description"
-          content="ボクらのホームパーティー ぼくぱ ボクパ"
-        />
+        <meta name="description" content="ボクらのホームパーティー" />
       </Head>
       <Header />
       <main>
