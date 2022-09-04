@@ -1,6 +1,5 @@
 import Image from 'next/future/image'
 
-import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import mainImage from '@/images/main.jpg'
 import main3Image from '@/images/main3.png'
@@ -36,10 +35,13 @@ export function Hero() {
               パーティーは楽しく盛り上がる中、閉じ込められていた悩みや感情が少しずつ明らかになっていく...。
             </p>
           </div>
-          <Image
-            className="mx-auto my-10 rounded-5xl shadow"
-            src={main3Image}
-            alt=""
+          <iframe
+            className="my-10 aspect-video w-full"
+            src="https://www.youtube.com/embed/w9G1VMNBGAA"
+            title="ボクらのホームパーティー"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
           />
           <div className="mt-6 space-y-6 font-display text-xl tracking-tight text-gray-900">
             <p className="mb-5">
