@@ -35,23 +35,23 @@ const staffs = [
           愛妻物語』（2020/足立紳）の撮影を担当。
         </p>
         <p className="mb-1 mt-5 font-semibold">主な撮影作品</p>
-        <ul className="list-none pl-1 text-base">
-          <li className="mb-3">
+        <ul className="list-none pl-1 text-sm">
+          <li className="mb-2">
             2000年 『独立少年合唱団』
             第50回ベルリン国際映画祭:アルフレード・バウアー賞 （緒方明監督）
           </li>
-          <li className="mb-3">
+          <li className="mb-2">
             2001年 『独立少年合唱団』 第22回ヨコハマ映画祭: 撮影賞
           </li>
-          <li className="mb-3">
+          <li className="mb-2">
             2001年 『火垂』 ブエノスアイレス国際映画祭: 最優秀撮影監督賞
             （河瀬直美監督）
           </li>
-          <li className="mb-3">
+          <li className="mb-2">
             2009年 『TOKYO!』 第61回カンヌ国際映画祭: 「ある視点」部門出品
             （ミシェル・ゴンドリー監督）
           </li>
-          <li className="mb-3">
+          <li>
             2011年 『街灯りの向こうに』 ひろしま映像展: 撮影賞 （山本亜希監督）
           </li>
         </ul>
