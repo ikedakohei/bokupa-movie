@@ -6,6 +6,7 @@ import { Hero } from '@/components/Hero'
 import { Newsletter } from '@/components/Newsletter'
 import { Schedule } from '@/components/Schedule'
 import { Staffs } from '@/components/Staffs'
+import { Casts } from '@/components/Casts'
 import { Sponsors } from '@/components/Sponsors'
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <main>
         <Hero />
         <Staffs />
+        <Casts />
         <Schedule />
         <Sponsors />
         <Newsletter />
