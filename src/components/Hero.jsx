@@ -21,10 +21,7 @@ export function Hero() {
             ホームパーティー
           </h1>
 
-          <Image className="mx-auto mt-10" src={mainImage} alt="" />
-          <p className="mt-5 mb-10 text-center text-xl text-gray-900">
-            2022年11月 劇場公開映画
-          </p>
+          <Image className="mx-auto my-10" src={mainImage} alt="" />
           <div className="mt-6 space-y-6 font-display text-xl tracking-tight text-gray-900">
             <h2
               style={{ fontFamily: 'Nico Moji' }}
