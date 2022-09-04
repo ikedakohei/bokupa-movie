@@ -3,8 +3,8 @@ import Image from 'next/future/image'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import jaquelinIschImage from '@/images/avatars/jaquelin-isch.jpg'
-import stevenMchailImage from '@/images/avatars/steven-mchail.jpg'
+import inomotoMasamiImage from '@/images/staffs/inomoto-masami.jpg'
+import kawanobeShuichiImage from '@/images/staffs/kawanobe-shuichi.jpg'
 
 const staffs = [
   {
@@ -22,7 +22,7 @@ const staffs = [
         </p>
       </>
     ),
-    image: stevenMchailImage,
+    image: kawanobeShuichiImage,
   },
   {
     name: '猪本 雅三',
@@ -57,7 +57,7 @@ const staffs = [
         </ul>
       </>
     ),
-    image: jaquelinIschImage,
+    image: inomotoMasamiImage,
   },
 ]
 
