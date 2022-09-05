@@ -206,7 +206,7 @@ export function Casts() {
           <div className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 sm:gap-y-16 [&:not(:focus-visible)]:focus:outline-none">
             {casts.map((cast, castIndex) => (
               <div key={castIndex}>
-                <div className="group relative mx-auto h-[20rem] transform overflow-hidden rounded-4xl sm:w-80">
+                <div className="group relative mx-auto h-[20rem] transform overflow-hidden rounded-4xl md:w-80">
                   <div
                     className={clsx(
                       'absolute top-0 left-0 right-4 bottom-6 rounded-4xl border xl:right-6',
