@@ -61,34 +61,13 @@ const staffs = [
   },
 ]
 
-function ImageClipPaths({ id, ...props }) {
-  return (
-    <svg aria-hidden="true" width={0} height={0} {...props}>
-      <defs>
-        <clipPath id={`${id}-0`} clipPathUnits="objectBoundingBox">
-          <path d="M0,0 h0.729 v0.129 h0.121 l-0.016,0.032 C0.815,0.198,0.843,0.243,0.885,0.243 H1 v0.757 H0.271 v-0.086 l-0.121,0.057 v-0.214 c0,-0.032,-0.026,-0.057,-0.057,-0.057 H0 V0" />
-        </clipPath>
-        <clipPath id={`${id}-1`} clipPathUnits="objectBoundingBox">
-          <path d="M1,1 H0.271 v-0.129 H0.15 l0.016,-0.032 C0.185,0.802,0.157,0.757,0.115,0.757 H0 V0 h0.729 v0.086 l0.121,-0.057 v0.214 c0,0.032,0.026,0.057,0.057,0.057 h0.093 v0.7" />
-        </clipPath>
-        <clipPath id={`${id}-2`} clipPathUnits="objectBoundingBox">
-          <path d="M1,0 H0.271 v0.129 H0.15 l0.016,0.032 C0.185,0.198,0.157,0.243,0.115,0.243 H0 v0.757 h0.729 v-0.086 l0.121,0.057 v-0.214 c0,-0.032,0.026,-0.057,0.057,-0.057 h0.093 V0" />
-        </clipPath>
-      </defs>
-    </svg>
-  )
-}
-
 export function Staffs() {
-  let id = useId()
-
   return (
     <section
       id="staffs"
       aria-labelledby="staffs-title"
       className="py-20 sm:py-32"
     >
-      <ImageClipPaths id={id} />
       <Container>
         <div className="mx-auto">
           <h2
@@ -105,18 +84,15 @@ export function Staffs() {
               <div className="group relative h-[20rem] transform overflow-hidden rounded-4xl">
                 <div
                   className={clsx(
-                    'absolute top-0 left-0 right-4 bottom-6 rounded-4xl border transition duration-300 group-hover:scale-95 xl:right-6',
+                    'absolute top-0 left-0 right-4 bottom-6 rounded-4xl border xl:right-6',
                     ['border-blue-300', 'border-indigo-300', 'border-sky-300'][
                       staffIndex % 3
                     ]
                   )}
                 />
-                <div
-                  className="absolute inset-0 bg-indigo-50"
-                  style={{ clipPath: `url(#${id}-${staffIndex % 3})` }}
-                >
+                <div className="absolute inset-0 bg-indigo-50">
                   <Image
-                    className="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-110"
+                    className="absolute inset-0 h-full w-full object-cover"
                     src={staff.image}
                     alt=""
                     priority
