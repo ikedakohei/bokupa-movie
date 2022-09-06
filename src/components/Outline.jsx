@@ -3,7 +3,7 @@ export function Outline() {
     <>
       <div
         id="outline"
-        className="space-y-6 pt-20 font-display text-xl tracking-tight text-gray-900"
+        className="space-y-6 pt-20 font-display text-xl tracking-tight text-gray-900 md:pt-32"
       >
         <h2
           style={{ fontFamily: 'Nico Moji' }}

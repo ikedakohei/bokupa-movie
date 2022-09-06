@@ -14,7 +14,7 @@ export function Main() {
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
           <Image className="mx-auto" src={titleImage} alt="" />
-          <Image className="mx-auto mb-10" src={mainImage} alt="" />
+          <Image className="mx-auto pb-10" src={mainImage} alt="" />
           <Outline />
         </div>
       </Container>
