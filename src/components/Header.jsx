@@ -45,7 +45,7 @@ function MobileNavLink({ children, ...props }) {
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b bg-white">
+    <header className="sticky top-0 z-50 border-b bg-white md:p-1">
       <nav>
         <div className="relative z-50 flex justify-between px-4 py-1 sm:px-6 lg:px-8">
           <div className="relative z-10 flex items-center gap-16">
