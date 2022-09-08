@@ -2,8 +2,8 @@ import Image from 'next/future/image'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import inomotoMasamiImage from '@/images/staffs/inomoto-masami.jpg'
-import kawanobeShuichiImage from '@/images/staffs/kawanobe-shuichi.jpg'
+import inomotoMasamiImage from '@/images/staffs/inomoto-masami.webp'
+import kawanobeShuichiImage from '@/images/staffs/kawanobe-shuichi.webp'
 
 const staffs = [
   {

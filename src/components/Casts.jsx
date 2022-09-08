@@ -3,13 +3,13 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 
-import tomoyaImage from '@/images/casts/tomoya.jpg'
-import shoichiImage from '@/images/casts/shoichi.jpg'
-import masashiImage from '@/images/casts/masashi.jpg'
-import naokiImage from '@/images/casts/naoki.jpg'
-import akitoImage from '@/images/casts/akito.jpg'
-import yasushiImage from '@/images/casts/yasushi.jpg'
-import kenichiImage from '@/images/casts/kenichi.jpg'
+import tomoyaImage from '@/images/casts/tomoya.webp'
+import shoichiImage from '@/images/casts/shoichi.webp'
+import masashiImage from '@/images/casts/masashi.webp'
+import naokiImage from '@/images/casts/naoki.webp'
+import akitoImage from '@/images/casts/akito.webp'
+import yasushiImage from '@/images/casts/yasushi.webp'
+import kenichiImage from '@/images/casts/kenichi.webp'
 
 const casts = [
   {

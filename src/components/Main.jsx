@@ -1,8 +1,8 @@
 import { Container } from '@/components/Container'
 import { Outline } from '@/components/Outline'
 import Image from 'next/future/image'
-import titleImage from '@/images/bhp_title.png'
-import mainImage from '@/images/main.jpg'
+import titleImage from '@/images/bhp_title.webp'
+import mainImage from '@/images/main.webp'
 
 export function Main() {
   return (

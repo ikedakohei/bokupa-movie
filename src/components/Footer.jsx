@@ -1,6 +1,6 @@
 import Image from 'next/future/image'
 import { Container } from '@/components/Container'
-import titleImage from '@/images/bhp_title.png'
+import titleImage from '@/images/bhp_title.webp'
 
 export function Footer() {
   return (
