@@ -52,9 +52,8 @@ export function Header() {
             <Link href="/" aria-label="Home">
               <Image
                 src={mainLogo}
-                alt="ボクらのホームパーティー ロゴ"
+                alt=""
                 className="h-10 w-auto rounded-full"
-                placeholder='blur'
               />
             </Link>
             <div className="hidden lg:flex lg:gap-10">
