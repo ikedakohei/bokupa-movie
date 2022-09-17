@@ -71,13 +71,12 @@ export function Staffs() {
         <div className="mx-auto">
           <h2
             id="staffs-title"
-            style={{ fontFamily: 'Nico Moji' }}
-            className="mb-10 text-center font-display text-4xl font-bold tracking-tighter text-gray-900 sm:text-5xl"
+            className="font-serif mb-14 text-center font-display text-3xl font-bold tracking-tighter text-gray-900 sm:text-4xl"
           >
             スタッフ
           </h2>
         </div>
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 sm:gap-y-16 [&:not(:focus-visible)]:focus:outline-none">
+        <div className="font-sans grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 sm:gap-y-16 [&:not(:focus-visible)]:focus:outline-none">
           {staffs.map((staff, staffIndex) => (
             <div key={staffIndex}>
               <div className="group relative mx-auto h-[20rem] transform overflow-hidden rounded-4xl md:w-80">

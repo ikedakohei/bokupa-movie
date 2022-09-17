@@ -156,13 +156,12 @@ export function Casts() {
           <div className="mx-auto">
             <h2
               id="casts-title"
-              style={{ fontFamily: 'Nico Moji' }}
-              className="mb-10 text-center font-display text-4xl font-bold tracking-tighter text-gray-900 sm:text-5xl"
+              className="font-serif mb-14 text-center text-3xl font-bold tracking-tighter text-gray-900 sm:text-4xl"
             >
               キャスト
             </h2>
           </div>
-          <div className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 sm:gap-y-16 [&:not(:focus-visible)]:focus:outline-none">
+          <div className="font-sans grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 sm:gap-y-16 [&:not(:focus-visible)]:focus:outline-none">
             {casts.map((cast, castIndex) => (
               <div key={castIndex}>
                 <div className="group relative mx-auto h-[20rem] transform overflow-hidden rounded-4xl md:w-80">
@@ -186,7 +185,7 @@ export function Casts() {
                     />
                   </div>
                 </div>
-                <h3 className="mt-8 text-center font-display text-xl font-bold tracking-tight text-slate-900">
+                <h3 className="mt-8 text-center text-xl font-bold tracking-tight text-slate-900">
                   {cast.name}
                 </h3>
                 <p className="mt-1 text-center text-base tracking-tight text-slate-500">

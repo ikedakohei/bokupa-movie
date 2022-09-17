@@ -3,11 +3,10 @@ export function Outline() {
     <>
       <div
         id="outline"
-        className="space-y-6 pt-20 font-display text-xl tracking-tight text-gray-900 md:pt-32"
+        className="font-sans space-y-6 pt-20 text-xl tracking-tight text-gray-900 md:pt-32"
       >
         <h2
-          style={{ fontFamily: 'Nico Moji' }}
-          className="text-center font-display text-4xl font-bold tracking-tighter text-gray-900 sm:text-5xl"
+          className="text-center mb-14 font-serif text-3xl font-bold tracking-tighter text-gray-900 sm:text-4xl"
         >
           あらすじ
         </h2>
@@ -25,7 +24,7 @@ export function Outline() {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       />
-      <div className="mt-6 space-y-6 font-display text-xl tracking-tight text-gray-900">
+      <div className="mt-6 space-y-6 font-sans text-xl tracking-tight text-gray-900">
         <p className="mb-5">
           監督自身の実体験やゲイバーでのリサーチを基にストーリーが作られた本作。
         </p>

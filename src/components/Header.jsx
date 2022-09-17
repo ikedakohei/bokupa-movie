@@ -35,7 +35,7 @@ function MobileNavLink({ children, ...props }) {
   return (
     <Popover.Button
       as={Link}
-      className="block text-xl leading-7 tracking-tight text-gray-700"
+      className="block text-md leading-7 tracking-tight text-gray-700"
       {...props}
     >
       {children}
@@ -97,12 +97,14 @@ export function Header() {
                             y: -32,
                             transition: { duration: 0.2 },
                           }}
-                          className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pb-6 pt-16 shadow-2xl shadow-gray-900/20"
+                          className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pb-4 pt-16 shadow-2xl shadow-gray-900/20"
                         >
                           <div
-                            style={{ fontFamily: 'Nico Moji' }}
-                            className="space-y-4"
+                            className="font-serif font-light space-y-3"
                           >
+                            <MobileNavLink href="/news">
+                              NEWS
+                            </MobileNavLink>
                             <MobileNavLink href="#outline">
                               あらすじ
                             </MobileNavLink>
@@ -111,6 +113,12 @@ export function Header() {
                             </MobileNavLink>
                             <MobileNavLink href="#staffs">
                               スタッフ
+                            </MobileNavLink>
+                            <MobileNavLink href="/theaters">
+                              劇場情報
+                            </MobileNavLink>
+                            <MobileNavLink href="/campaigns">
+                              キャンペーン
                             </MobileNavLink>
                           </div>
                         </Popover.Panel>

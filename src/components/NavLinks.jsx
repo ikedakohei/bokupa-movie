@@ -6,14 +6,17 @@ export function NavLinks() {
   let [hoveredIndex, setHoveredIndex] = useState(null)
 
   return [
+    ['NEWS', '#news'],
     ['あらすじ', '#outline'],
     ['キャスト', '#casts'],
     ['スタッフ', '#staffs'],
+    ['劇場情報', '#theaters'],
+    ['キャンペーン', '#campaigns'],
   ].map(([label, href], index) => (
     <Link
       key={label}
       href={href}
-      className="relative -my-2 -mx-3 rounded-lg px-3 py-2 text-sm text-gray-700 transition-colors delay-150 hover:text-gray-900 hover:delay-[0ms]"
+      className="relative -my-2 -mx-3 rounded-lg px-3 py-2 text-md text-gray-700 transition-colors delay-150 hover:text-gray-900 hover:delay-[0ms]"
       onMouseEnter={() => setHoveredIndex(index)}
       onMouseLeave={() => setHoveredIndex(null)}
     >
@@ -32,8 +35,7 @@ export function NavLinks() {
         )}
       </AnimatePresence>
       <span
-        style={{ fontFamily: 'Nico Moji' }}
-        className="relative z-10 text-xl"
+        className="font-serif font-light relative z-10"
       >
         {label}
       </span>
