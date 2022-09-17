@@ -142,7 +142,7 @@ const casts = [
 
 export function Casts() {
   return (
-    <div className="relative pt-10 pb-20 sm:py-24">
+    <div className="relative pt-10 sm:pt-24">
       <section
         id="casts"
         aria-labelledby="casts-title"

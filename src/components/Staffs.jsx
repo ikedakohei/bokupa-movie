@@ -65,7 +65,7 @@ export function Staffs() {
     <section
       id="staffs"
       aria-labelledby="staffs-title"
-      className="py-20 sm:py-32"
+      className="pt-20 sm:pt-32"
     >
       <Container>
         <div className="mx-auto">
