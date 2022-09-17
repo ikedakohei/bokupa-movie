@@ -183,7 +183,7 @@ export function Casts() {
                     />
                   </div>
                 </div>
-                <h3 className="mt-8 text-center text-xl font-bold tracking-tight text-slate-900">
+                <h3 className="mt-8 text-center text-xl tracking-tight text-slate-900">
                   {cast.name}
                 </h3>
                 <p className="mt-1 text-center text-base tracking-tight text-slate-500">

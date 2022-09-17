@@ -3,7 +3,7 @@ export function Outline() {
     <>
       <div
         id="outline"
-        className="font-sans space-y-6 pt-20 text-xl tracking-tight text-gray-900 md:pt-32"
+        className="font-sans space-y-6 pt-20 text-lg tracking-tight text-gray-900 md:pt-32"
       >
         <div className="flex justify-center">
           <h2
@@ -26,7 +26,7 @@ export function Outline() {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       />
-      <div className="mt-6 space-y-6 font-sans text-xl tracking-tight text-gray-900">
+      <div className="mt-6 space-y-6 font-sans text-lg tracking-tight text-gray-900">
         <p className="mb-5">
           監督自身の実体験やゲイバーでのリサーチを基にストーリーが作られた本作。
         </p>
