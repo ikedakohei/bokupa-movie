@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>ボクらのホームパーティー</title>
+        <title>映画『ボクらのホームパーティー』公式サイト</title>
         <meta name="description" content="ボクらのホームパーティー" />
       </Head>
       <Header />
