@@ -7,7 +7,7 @@ export function Outline() {
       >
         <div className="flex justify-center">
           <h2
-            className="border-l-2 px-2 pb-2 border-indigo-500 mb-4 font-serif text-3xl font-bold tracking-tighter text-gray-900 sm:text-4xl"
+            className="border-l-2 px-2 pb-2 border-yellow-300 mb-4 font-serif text-3xl font-bold tracking-tighter text-gray-900 sm:text-4xl"
           >
             あらすじ
           </h2>

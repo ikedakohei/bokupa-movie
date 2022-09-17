@@ -153,7 +153,7 @@ export function Casts() {
             <div className="flex justify-center">
               <h2
                 id="casts-title"
-                className="border-l-2 px-2 pb-2 border-indigo-500 font-serif mb-12 text-3xl font-bold tracking-tighter text-gray-900 sm:text-4xl"
+                className="border-l-2 px-2 pb-2 border-yellow-300 font-serif mb-12 text-3xl font-bold tracking-tighter text-gray-900 sm:text-4xl"
               >
                 キャスト
               </h2>
