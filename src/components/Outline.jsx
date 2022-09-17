@@ -6,7 +6,7 @@ export function Outline() {
         className="font-sans space-y-6 pt-20 text-xl tracking-tight text-gray-900 md:pt-32"
       >
         <h2
-          className="text-center mb-14 font-serif text-3xl font-bold tracking-tighter text-gray-900 sm:text-4xl"
+          className="text-center mb-10 font-serif text-3xl font-bold tracking-tighter text-gray-900 sm:text-4xl"
         >
           あらすじ
         </h2>

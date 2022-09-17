@@ -143,10 +143,6 @@ const casts = [
 export function Casts() {
   return (
     <div className="relative pt-10 pb-20 sm:py-24">
-      <div className="absolute inset-x-0 -top-0 -bottom-14 overflow-hidden bg-indigo-50">
-        <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white" />
-        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white" />
-      </div>
       <section
         id="casts"
         aria-labelledby="casts-title"
