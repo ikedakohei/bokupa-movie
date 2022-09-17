@@ -10,7 +10,7 @@ export function Main() {
     <div className="relative">
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
-          <Image className="mx-auto" src={titleImage} alt="ボクらのホームパーティー タイトル" />
+          <Image className="mx-auto" src={titleImage} alt="ボクらのホームパーティー タイトル" placeholder="blur" />
           <div className="font-sans text-center text-2xl leading-8 pb-6">
             <h2>
               K{"'"}s cinema新宿にて
@@ -19,7 +19,7 @@ export function Main() {
               <br />
               より劇場公開</h2>
           </div>
-          <Image className="mx-auto mb-2" src={mainImage} alt="ボクらのホームパーティー メイン画像" />
+          <Image className="mx-auto mb-2" src={mainImage} alt="ボクらのホームパーティー メイン画像" placeholder="blur" />
           <div className="font-sans max-w-xs mx-auto text-center">
             <p>川野邉修一 監督作品</p>
             <div className="my-2">
@@ -59,7 +59,7 @@ export function Main() {
               <div>劇中曲:DJ SHINKAWA、御中レコード</div>
             </div>
           </div>
-          <Image className="mx-auto mt-0 pt-0 mb-2" src={foodsImage} alt="ボクらのホームパーティー 料理" />
+          <Image className="mx-auto mt-0 pt-0 mb-2" src={foodsImage} alt="ボクらのホームパーティー 料理"  placeholder="blur" preload="priority" />
           <Outline />
         </div>
       </Container>
