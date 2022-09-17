@@ -49,14 +49,14 @@ export function Main() {
               <div className="inline-block">永里健太郎</div>
             </div>
             <div className="mt-2 mx-auto text-xs">
-              <div>撮影:猪本雅三 / 撮影助手(照明):新里勝也</div>
-              <div>録音:安光雪江 / 編集・演出助手:野坂拓彰</div>
-              <div>制作:村田潤 / 整音:東凌太郎</div>
-              <div>音楽:礒﨑祥吾 / スチール:Sai</div>
-              <div>衣装:福原佐和子 / メイク:東村忠明</div>
-              <div>タイトルモーション:藤林久哉</div>
-              <div>タイトルデザイン:obktc</div>
-              <div>劇中曲:DJ SHINKAWA、御中レコード</div>
+              <div>撮影: 猪本雅三 / 撮影助手(照明): 新里勝也</div>
+              <div>録音: 安光雪江 / 編集・演出助手: 野坂拓彰</div>
+              <div>制作: 村田潤 / 整音: 東凌太郎</div>
+              <div>音楽: 礒﨑祥吾 / スチール: Sai</div>
+              <div>衣装: 福原佐和子 / メイク: 東村忠明</div>
+              <div>タイトルモーション: 藤林久哉</div>
+              <div>タイトルデザイン: obktc</div>
+              <div>劇中曲: DJ SHINKAWA、御中レコード</div>
             </div>
           </div>
           <Image className="mx-auto mt-0 pt-0 mb-2" src={foodsImage} alt="ボクらのホームパーティー 料理"  placeholder="blur" preload="priority" />
