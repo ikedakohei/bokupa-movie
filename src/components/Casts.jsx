@@ -142,20 +142,22 @@ const casts = [
 
 export function Casts() {
   return (
-    <div className="relative pt-10 sm:pt-24">
+    <div className="relative">
       <section
         id="casts"
         aria-labelledby="casts-title"
-        className="py-20 sm:py-32"
+        className="pt-20 sm:pt-32"
       >
         <Container className="relative">
           <div className="mx-auto">
-            <h2
-              id="casts-title"
-              className="font-serif mb-14 text-center text-3xl font-bold tracking-tighter text-gray-900 sm:text-4xl"
-            >
-              キャスト
-            </h2>
+            <div className="flex justify-center">
+              <h2
+                id="casts-title"
+                className="border-l-2 px-2 pb-2 border-indigo-500 font-serif mb-12 text-3xl font-bold tracking-tighter text-gray-900 sm:text-4xl"
+              >
+                キャスト
+              </h2>
+            </div>
           </div>
           <div className="font-sans grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 sm:gap-y-16 [&:not(:focus-visible)]:focus:outline-none">
             {casts.map((cast, castIndex) => (

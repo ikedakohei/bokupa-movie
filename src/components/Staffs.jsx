@@ -69,12 +69,14 @@ export function Staffs() {
     >
       <Container>
         <div className="mx-auto">
-          <h2
-            id="staffs-title"
-            className="font-serif mb-14 text-center font-display text-3xl font-bold tracking-tighter text-gray-900 sm:text-4xl"
-          >
-            スタッフ
-          </h2>
+          <div className="flex justify-center">
+            <h2
+              id="staffs-title"
+              className="border-l-2 px-2 pb-2 border-indigo-500 font-serif mb-12 font-display text-3xl font-bold tracking-tighter text-gray-900 sm:text-4xl"
+            >
+              スタッフ
+            </h2>
+          </div>
         </div>
         <div className="font-sans grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 sm:gap-y-16 [&:not(:focus-visible)]:focus:outline-none">
           {staffs.map((staff, staffIndex) => (

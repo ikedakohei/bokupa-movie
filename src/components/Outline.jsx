@@ -5,11 +5,13 @@ export function Outline() {
         id="outline"
         className="font-sans space-y-6 pt-20 text-xl tracking-tight text-gray-900 md:pt-32"
       >
-        <h2
-          className="text-center mb-10 font-serif text-3xl font-bold tracking-tighter text-gray-900 sm:text-4xl"
-        >
-          あらすじ
-        </h2>
+        <div className="flex justify-center">
+          <h2
+            className="border-l-2 px-2 pb-2 border-indigo-500 mb-4 font-serif text-3xl font-bold tracking-tighter text-gray-900 sm:text-4xl"
+          >
+            あらすじ
+          </h2>
+        </div>
         <p>
           東京の片隅でホームパーティーが開かれた。 そこに集まった7人のゲイ。
           主催者カップルの彰人と靖、大学生の智也、ゲイバーの店子・将一、ゲイクラブの店員・直樹とその友達の正志、そして、写真家の健一。
