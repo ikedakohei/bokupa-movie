@@ -35,7 +35,7 @@ function MobileNavLink({ children, ...props }) {
   return (
     <Popover.Button
       as={Link}
-      className="block text-md leading-7 tracking-tight text-gray-700"
+      className="block text-lg leading-7 tracking-tight text-gray-700"
       {...props}
     >
       {children}
