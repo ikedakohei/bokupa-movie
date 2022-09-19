@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react'
+import { useRouter } from 'next/router';
+
 import Head from 'next/head'
 import { Loader } from '@/components/Loader'
 import { Footer } from '@/components/Footer'
@@ -8,10 +10,15 @@ import { Staffs } from '@/components/Staffs'
 import { Casts } from '@/components/Casts'
 
 export default function Home() {
+  const router = useRouter();
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect (() => {
-    setTimeout(() => {setIsLoading(false)}, 3000);
+    setTimeout(() => {
+      setIsLoading(false);
+      router.push(router.pathname);
+    }, 3000);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
