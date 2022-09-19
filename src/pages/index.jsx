@@ -5,24 +5,29 @@ import { Loader } from '@/components/Loader'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Main } from '@/components/Main'
+import { Outline } from '@/components/Outline'
 import { Staffs } from '@/components/Staffs'
 import { Casts } from '@/components/Casts'
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
   const router = useRouter();
+  const outlineRef = useRef(null);
   const castsRef = useRef(null);
+  const staffsRef = useRef(null);
 
   useEffect (() => {
     setTimeout(() => {
       setIsLoading(false);
-
-      if (router.asPath === '#casts') {
+      if (router.asPath === '/#outline') {
+        outlineRef?.current?.scrollIntoView();
+      } else if (router.asPath === '/#casts') {
         castsRef?.current?.scrollIntoView();
+      } else if (router.asPath === '/#staffs') {
+        staffsRef?.current?.scrollIntoView();
       }
-
     }, 3000);
-  }, []);
+  }, [router.asPath]);
 
   return (
     <>
@@ -35,8 +40,11 @@ export default function Home() {
         <Header />
         <main>
           <Main />
+          <div ref={outlineRef} />
+          <Outline />
           <div ref={castsRef} />
           <Casts />
+          <div ref={staffsRef} />
           <Staffs />
         </main>
         <Footer />
