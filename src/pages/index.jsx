@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useLayoutEffect, useRef } from 'react'
 import { useRouter } from 'next/router';
 import Head from 'next/head'
 import { Loader } from '@/components/Loader'
@@ -16,13 +16,13 @@ export default function Home() {
   const castsRef = useRef(null);
   const staffsRef = useRef(null);
 
-  useEffect (() => {
+  useLayoutEffect (() => {
     setTimeout(() => {
       setIsLoading(false);
     }, 3000);
   }, []);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
       if (isLoading === false) {
         if (router.asPath === '/#outline') {
           outlineRef?.current?.scrollIntoView();
