@@ -15,7 +15,6 @@ export default function Home() {
     setTimeout(() => {
       setIsLoading(false);
     }, 3000);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
