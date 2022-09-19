@@ -27,6 +27,7 @@ module.exports = {
       fontFamily: {
         sans: ["Noto Sans JP", ...defaultTheme.fontFamily.sans],
         serif: ["Noto Serif JP", ...defaultTheme.fontFamily.sans],
+        kaisei: ["Kaisei Opti", ...defaultTheme.fontFamily.sans],
       },
       maxWidth: {
         '2xl': '40rem',

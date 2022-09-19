@@ -11,7 +11,7 @@ export function Main() {
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
           <Image className="mx-auto" src={titleImage} alt="" />
-          <div className="font-sans text-center text-2xl leading-8 pb-6">
+          <div className="font-kaisei text-center text-2xl leading-8 pb-6">
             <h2>
               K{"'"}s cinema新宿にて
               <br />
