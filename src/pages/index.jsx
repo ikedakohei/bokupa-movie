@@ -16,7 +16,11 @@ export default function Home() {
   useEffect (() => {
     setTimeout(() => {
       setIsLoading(false);
-      router.push(router.pathname);
+      const hashContent = router.asPath.split('#')[1] ?? '';
+
+      if (hashContent !== '' && router.isReady) {
+        router.push({ pathname: router.pathname, hash: hashContent });
+      }
     }, 3000);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
