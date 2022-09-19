@@ -1,4 +1,4 @@
-import { useState, useLayoutEffect, useRef } from 'react'
+import { useState, useEffect, useLayoutEffect, useRef } from 'react'
 import { useRouter } from 'next/router';
 import Head from 'next/head'
 import { Loader } from '@/components/Loader'
@@ -16,7 +16,7 @@ export default function Home() {
   const castsRef = useRef(null);
   const staffsRef = useRef(null);
 
-  useLayoutEffect (() => {
+  useEffect (() => {
     setTimeout(() => {
       setIsLoading(false);
     }, 3000);
@@ -32,7 +32,7 @@ export default function Home() {
           staffsRef?.current?.scrollIntoView();
         }
       }
-  }, [isLoading, router.asPath])
+  }, [isLoading, router.asPath]);
 
   return (
     <>
