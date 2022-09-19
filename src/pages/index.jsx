@@ -23,14 +23,14 @@ export default function Home() {
   }, []);
 
   useLayoutEffect(() => {
-      if (isLoading === false) {
-        if (router.asPath === '/#outline') {
-          outlineRef?.current?.scrollIntoView();
-        } else if (router.asPath === '/#casts') {
-          castsRef?.current?.scrollIntoView();
-        } else if (router.asPath === '/#staffs') {
-          staffsRef?.current?.scrollIntoView();
-        }
+      if (isLoading === true) return;
+
+      if (router.asPath === '/#outline') {
+        outlineRef?.current?.scrollIntoView();
+      } else if (router.asPath === '/#casts') {
+        castsRef?.current?.scrollIntoView();
+      } else if (router.asPath === '/#staffs') {
+        staffsRef?.current?.scrollIntoView();
       }
   }, [isLoading, router.asPath]);
 

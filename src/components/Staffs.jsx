@@ -34,7 +34,7 @@ const staffs = [
           愛妻物語』（2020/足立紳）の撮影を担当。
         </p>
         <p className="mb-1 mt-5 font-semibold">主な撮影作品</p>
-        <ul className="list-none pl-1 text-sm">
+        <ul className="list-none pl-1 text-xs">
           <li className="mb-2">
             2000年 『独立少年合唱団』
             第50回ベルリン国際映画祭:アルフレード・バウアー賞 （緒方明監督）
