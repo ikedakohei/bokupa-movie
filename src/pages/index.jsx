@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react'
-
+import { useState, useEffect, useRef } from 'react'
+import { useRouter } from 'next/router';
 import Head from 'next/head'
 import { Loader } from '@/components/Loader'
 import { Footer } from '@/components/Footer'
@@ -10,10 +10,17 @@ import { Casts } from '@/components/Casts'
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
+  const router = useRouter();
+  const castsRef = useRef(null);
 
   useEffect (() => {
     setTimeout(() => {
       setIsLoading(false);
+
+      if (router.asPath === '#casts') {
+        castsRef?.current?.scrollIntoView();
+      }
+
     }, 3000);
   }, []);
 
@@ -28,6 +35,7 @@ export default function Home() {
         <Header />
         <main>
           <Main />
+          <div ref={castsRef} />
           <Casts />
           <Staffs />
         </main>
