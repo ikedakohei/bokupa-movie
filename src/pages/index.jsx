@@ -19,17 +19,20 @@ export default function Home() {
   useEffect (() => {
     setTimeout(() => {
       setIsLoading(false);
-
-      if (router.asPath === '/#outline') {
-        outlineRef?.current?.scrollIntoView();
-      } else if (router.asPath === '/#casts') {
-        castsRef?.current?.scrollIntoView();
-      } else if (router.asPath === '/#staffs') {
-        staffsRef?.current?.scrollIntoView();
-      }
     }, 3000);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  useEffect(() => {
+      if (isLoading === false) {
+        if (router.asPath === '/#outline') {
+          outlineRef?.current?.scrollIntoView();
+        } else if (router.asPath === '/#casts') {
+          castsRef?.current?.scrollIntoView();
+        } else if (router.asPath === '/#staffs') {
+          staffsRef?.current?.scrollIntoView();
+        }
+      }
+  }, [isLoading, router.asPath])
 
   return (
     <>
