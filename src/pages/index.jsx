@@ -19,6 +19,7 @@ export default function Home() {
   useEffect (() => {
     setTimeout(() => {
       setIsLoading(false);
+
       if (router.asPath === '/#outline') {
         outlineRef?.current?.scrollIntoView();
       } else if (router.asPath === '/#casts') {
@@ -27,7 +28,8 @@ export default function Home() {
         staffsRef?.current?.scrollIntoView();
       }
     }, 3000);
-  }, [router.asPath]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <>
