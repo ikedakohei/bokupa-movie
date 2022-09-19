@@ -102,9 +102,9 @@ export function Header() {
                           <div
                             className="font-kaisei space-y-3"
                           >
-                            <MobileNavLink href="#news">
+                            {/* <MobileNavLink href="/news">
                               NEWS
-                            </MobileNavLink>
+                            </MobileNavLink> */}
                             <MobileNavLink href="#outline">
                               あらすじ
                             </MobileNavLink>
@@ -114,12 +114,12 @@ export function Header() {
                             <MobileNavLink href="#staffs">
                               スタッフ
                             </MobileNavLink>
-                            <MobileNavLink href="#theaters">
+                            {/* <MobileNavLink href="/theaters">
                               劇場情報
-                            </MobileNavLink>
-                            <MobileNavLink href="#campaigns">
+                            </MobileNavLink> */}
+                            {/* <MobileNavLink href="/campaigns">
                               キャンペーン
-                            </MobileNavLink>
+                            </MobileNavLink> */}
                           </div>
                         </Popover.Panel>
                       </>
