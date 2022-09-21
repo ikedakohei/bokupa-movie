@@ -86,13 +86,13 @@ export function Main() {
             スタッフ
           </Link>
           <Link
-            href="#theter"
+            href="#theters"
             className="rounded bg-cyan-500 p-2 text-center text-xs text-white hover:bg-cyan-700 sm:text-base"
           >
             劇場情報
           </Link>
           <Link
-            href="#campaign"
+            href="#campaigns"
             className="rounded bg-cyan-500 p-2 text-center text-xs text-white hover:bg-cyan-700 sm:text-base"
           >
             キャンペーン
