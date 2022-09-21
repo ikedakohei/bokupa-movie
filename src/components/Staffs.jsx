@@ -72,13 +72,13 @@ export function Staffs() {
           <div className="flex justify-center">
             <h2
               id="staffs-title"
-              className="border-l-2 px-2 pb-2 border-yellow-300 font-serif mb-12 font-display text-3xl font-bold tracking-tighter text-gray-900 sm:text-4xl"
+              className="font-display mb-12 border-l-2 border-yellow-300 px-2 pb-2 font-serif text-3xl font-bold tracking-tighter text-gray-900 sm:text-4xl"
             >
               スタッフ
             </h2>
           </div>
         </div>
-        <div className="font-sans grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 sm:gap-y-16 [&:not(:focus-visible)]:focus:outline-none">
+        <div className="grid grid-cols-1 gap-x-8 gap-y-10 font-sans sm:grid-cols-2 sm:gap-y-16 [&:not(:focus-visible)]:focus:outline-none">
           {staffs.map((staff, staffIndex) => (
             <div key={staffIndex}>
               <div className="group relative mx-auto h-[20rem] transform overflow-hidden rounded-4xl md:w-80">
@@ -100,7 +100,7 @@ export function Staffs() {
                   />
                 </div>
               </div>
-              <h3 className="mt-8 text-center font-display text-xl tracking-tight text-slate-900">
+              <h3 className="font-display mt-8 text-center text-xl tracking-tight text-slate-900">
                 {staff.name}
               </h3>
               <p className="mt-1 text-center text-base tracking-tight text-slate-500">

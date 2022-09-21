@@ -99,9 +99,7 @@ export function Header() {
                           }}
                           className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pb-4 pt-16 shadow-2xl shadow-gray-900/20"
                         >
-                          <div
-                            className="font-kaisei space-y-3"
-                          >
+                          <div className="space-y-3 font-kaisei">
                             {/* <MobileNavLink href="/news">
                               NEWS
                             </MobileNavLink> */}

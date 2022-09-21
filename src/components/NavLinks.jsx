@@ -34,11 +34,7 @@ export function NavLinks() {
           />
         )}
       </AnimatePresence>
-      <span
-        className="font-kaisei relative z-10"
-      >
-        {label}
-      </span>
+      <span className="relative z-10 font-kaisei">{label}</span>
     </Link>
   ))
 }

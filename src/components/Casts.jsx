@@ -1,7 +1,9 @@
+import { useState } from 'react'
 import Image from 'next/future/image'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
+import { CastsAndStaffsModal } from '@/components/CastsAndStaffsModal'
 
 import tomoyaImage from '@/images/casts/tomoya.webp'
 import shoichiImage from '@/images/casts/shoichi.webp'
@@ -141,6 +143,9 @@ const casts = [
 ]
 
 export function Casts() {
+  const [openCastsAndStaffsModal, setOpenCastsAndStaffsModal] = useState(false)
+  const [person, setPerson] = useState({})
+
   return (
     <div className="relative">
       <section
@@ -153,49 +158,39 @@ export function Casts() {
             <div className="flex justify-center">
               <h2
                 id="casts-title"
-                className="border-l-2 px-2 pb-2 border-yellow-300 font-serif mb-12 text-3xl font-bold tracking-tighter text-gray-900 sm:text-4xl"
+                className="mb-12 border-l-2 border-yellow-300 px-2 pb-2 font-serif text-3xl font-bold tracking-tighter text-gray-900 sm:text-4xl"
               >
                 キャスト
               </h2>
             </div>
           </div>
-          <div className="font-sans grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 sm:gap-y-16 [&:not(:focus-visible)]:focus:outline-none">
+          <div className="grid grid-cols-2 gap-y-20 gap-x-10 font-sans sm:gap-y-16 md:grid-cols-4 [&:not(:focus-visible)]:focus:outline-none">
             {casts.map((cast, castIndex) => (
               <div key={castIndex}>
-                <div className="group relative mx-auto h-[20rem] transform overflow-hidden rounded-4xl md:w-80">
-                  <div
-                    className={clsx(
-                      'absolute top-0 left-0 right-4 bottom-6 rounded-4xl border xl:right-6',
-                      [
-                        'border-blue-300',
-                        'border-indigo-300',
-                        'border-sky-300',
-                      ][castIndex % 3]
-                    )}
-                  />
-                  <div className="absolute inset-0 bg-indigo-50">
-                    <Image
-                      className="absolute inset-0 h-full w-full object-cover"
-                      src={cast.image}
-                      alt=""
-                      priority
-                      sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
-                    />
-                  </div>
-                </div>
-                <h3 className="mt-8 text-center text-xl tracking-tight text-slate-900">
-                  {cast.name}
-                </h3>
-                <p className="mt-1 text-center text-base tracking-tight text-slate-500">
+                <Image
+                  className="inset-0 h-full w-full cursor-pointer rounded-4xl object-cover"
+                  src={cast.image}
+                  alt=""
+                  priority
+                  sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
+                  onClick={() => {
+                    setPerson(cast)
+                    setOpenCastsAndStaffsModal(true)
+                  }}
+                />
+                <div className="mt-2 text-center">{cast.name}</div>
+                <div className="text-center text-sm text-gray-500">
                   {cast.role}
-                </p>
-                <div className="mt-1 text-lg tracking-tight text-slate-900">
-                  {cast.description}
                 </div>
               </div>
             ))}
           </div>
         </Container>
+        <CastsAndStaffsModal
+          openCastsAndStaffsModal={openCastsAndStaffsModal}
+          setOpenCastsAndStaffsModal={setOpenCastsAndStaffsModal}
+          person={person}
+        />
       </section>
     </div>
   )

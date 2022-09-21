@@ -1,5 +1,5 @@
 import { useState, useEffect, useLayoutEffect, useRef } from 'react'
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/router'
 import Head from 'next/head'
 import { Loader } from '@/components/Loader'
 import { Footer } from '@/components/Footer'
@@ -11,28 +11,29 @@ import { Casts } from '@/components/Casts'
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
-  const router = useRouter();
-  const outlineRef = useRef(null);
-  const castsRef = useRef(null);
-  const staffsRef = useRef(null);
 
-  useEffect (() => {
+  const router = useRouter()
+  const outlineRef = useRef(null)
+  const castsRef = useRef(null)
+  const staffsRef = useRef(null)
+
+  useEffect(() => {
     setTimeout(() => {
-      setIsLoading(false);
-    }, 3000);
-  }, []);
+      setIsLoading(false)
+    }, 3000)
+  }, [])
 
   useLayoutEffect(() => {
-      if (isLoading === true) return;
+    if (isLoading === true) return
 
-      if (router.asPath === '/#outline') {
-        outlineRef?.current?.scrollIntoView();
-      } else if (router.asPath === '/#casts') {
-        castsRef?.current?.scrollIntoView();
-      } else if (router.asPath === '/#staffs') {
-        staffsRef?.current?.scrollIntoView();
-      }
-  }, [isLoading, router.asPath]);
+    if (router.asPath === '/#outline') {
+      outlineRef?.current?.scrollIntoView()
+    } else if (router.asPath === '/#casts') {
+      castsRef?.current?.scrollIntoView()
+    } else if (router.asPath === '/#staffs') {
+      staffsRef?.current?.scrollIntoView()
+    }
+  }, [isLoading, router.asPath])
 
   return (
     <>
@@ -55,5 +56,5 @@ export default function Home() {
         <Footer />
       </div>
     </>
-  );
+  )
 }

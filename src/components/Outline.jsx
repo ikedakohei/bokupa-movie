@@ -6,12 +6,10 @@ export function Outline() {
       <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
         <div
           id="outline"
-          className="font-sans space-y-6 pt-20 text-lg tracking-tight text-gray-900 md:pt-32"
+          className="space-y-6 pt-20 font-sans text-lg tracking-tight text-gray-900 md:pt-32"
         >
           <div className="flex justify-center">
-            <h2
-              className="border-l-2 px-2 pb-2 border-yellow-300 mb-4 font-serif text-3xl font-bold tracking-tighter text-gray-900 sm:text-4xl"
-            >
+            <h2 className="mb-4 border-l-2 border-yellow-300 px-2 pb-2 font-serif text-3xl font-bold tracking-tighter text-gray-900 sm:text-4xl">
               あらすじ
             </h2>
           </div>
