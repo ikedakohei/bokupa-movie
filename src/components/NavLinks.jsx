@@ -6,12 +6,12 @@ export function NavLinks() {
   let [hoveredIndex, setHoveredIndex] = useState(null)
 
   return [
-    // ['NEWS', '/news'],
+    ['NEWS', '#news'],
     ['あらすじ', '#outline'],
     ['キャスト', '#casts'],
     ['スタッフ', '#staffs'],
-    // ['劇場情報', '#theaters'],
-    // ['キャンペーン', '/campaigns'],
+    ['劇場情報', '#theaters'],
+    ['キャンペーン', '#campaigns'],
   ].map(([label, href], index) => (
     <Link
       key={label}
