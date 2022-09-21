@@ -83,7 +83,7 @@ export function Staffs() {
             </h2>
           </div>
         </div>
-        <div className="mx-auto mb-16 grid grid-cols-2 gap-x-10 font-sans md:w-1/2 [&:not(:focus-visible)]:focus:outline-none">
+        <div className="mx-auto grid grid-cols-2 gap-x-10 font-sans md:w-1/2">
           {staffs.map((staff, staffIndex) => (
             <div key={staffIndex} className="font-sans">
               <Image
