@@ -1,5 +1,5 @@
 import { Container } from '@/components/Container'
-import { Outline } from '@/components/Outline'
+import Link from 'next/link'
 import Image from 'next/future/image'
 import titleImage from '@/images/bhp_title.webp'
 import mainImage from '@/images/main.webp'
@@ -60,6 +60,44 @@ export function Main() {
           </div>
         </div>
         <Image className="mx-auto mt-0 mb-2 pt-0" src={foodsImage} alt="" />
+        <div className="gap mx-4 mt-24 grid grid-cols-3 justify-center gap-x-2 gap-y-2 font-kaisei lg:hidden">
+          <Link
+            href="/news"
+            className="rounded bg-cyan-500 p-2 text-center text-xs text-white hover:bg-cyan-700 sm:text-base"
+          >
+            NEWS
+          </Link>
+          <Link
+            href="#outline"
+            className="rounded bg-cyan-500 p-2 text-center text-xs text-white hover:bg-cyan-700 sm:text-base"
+          >
+            あらすじ
+          </Link>
+          <Link
+            href="#casts"
+            className="rounded bg-cyan-500 p-2 text-center text-xs text-white hover:bg-cyan-700 sm:text-base"
+          >
+            キャスト
+          </Link>
+          <Link
+            href="#staffs"
+            className="rounded bg-cyan-500 p-2 text-center text-xs text-white hover:bg-cyan-700 sm:text-base"
+          >
+            スタッフ
+          </Link>
+          <Link
+            href="/theter"
+            className="rounded bg-cyan-500 p-2 text-center text-xs text-white hover:bg-cyan-700 sm:text-base"
+          >
+            劇場情報
+          </Link>
+          <Link
+            href="#campaign"
+            className="rounded bg-cyan-500 p-2 text-center text-xs text-white hover:bg-cyan-700 sm:text-base"
+          >
+            キャンペーン
+          </Link>
+        </div>
         <div className="pt-20 md:pt-32">
           <iframe
             className="aspect-video w-full"
