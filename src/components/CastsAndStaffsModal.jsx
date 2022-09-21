@@ -75,7 +75,7 @@ export function CastsAndStaffsModal({
                     <p className="mt-1 text-center text-base tracking-tight text-slate-500">
                       {person?.role}
                     </p>
-                    <div className="mt-1 text-lg tracking-tight text-slate-900">
+                    <div className="mt-1 text-start text-lg tracking-tight text-slate-900">
                       {person?.description}
                     </div>
                   </div>

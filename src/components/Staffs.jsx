@@ -1,7 +1,9 @@
+import { useState } from 'react'
 import Image from 'next/future/image'
-import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
+import { CastsAndStaffsModal } from '@/components/CastsAndStaffsModal'
+
 import inomotoMasamiImage from '@/images/staffs/inomoto-masami.webp'
 import kawanobeShuichiImage from '@/images/staffs/kawanobe-shuichi.webp'
 
@@ -25,7 +27,7 @@ const staffs = [
   },
   {
     name: '猪本 雅三',
-    role: '撮影監督（カメラマン）',
+    role: '撮影監督(カメラマン)',
     description: (
       <>
         <p className="mb-1">1959年8月9日、大阪府出身。</p>
@@ -61,6 +63,9 @@ const staffs = [
 ]
 
 export function Staffs() {
+  const [openCastsAndStaffsModal, setOpenCastsAndStaffsModal] = useState(false)
+  const [person, setPerson] = useState({})
+
   return (
     <section
       id="staffs"
@@ -78,41 +83,33 @@ export function Staffs() {
             </h2>
           </div>
         </div>
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 font-sans sm:grid-cols-2 sm:gap-y-16 [&:not(:focus-visible)]:focus:outline-none">
+        <div className="mx-auto mb-16 grid grid-cols-2 gap-x-10 font-sans md:w-1/2 [&:not(:focus-visible)]:focus:outline-none">
           {staffs.map((staff, staffIndex) => (
-            <div key={staffIndex}>
-              <div className="group relative mx-auto h-[20rem] transform overflow-hidden rounded-4xl md:w-80">
-                <div
-                  className={clsx(
-                    'absolute top-0 left-0 right-4 bottom-6 rounded-4xl border xl:right-6',
-                    ['border-blue-300', 'border-indigo-300', 'border-sky-300'][
-                      staffIndex % 3
-                    ]
-                  )}
-                />
-                <div className="absolute inset-0 bg-indigo-50">
-                  <Image
-                    className="absolute inset-0 h-full w-full object-cover"
-                    src={staff.image}
-                    alt=""
-                    priority
-                    sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
-                  />
-                </div>
-              </div>
-              <h3 className="font-display mt-8 text-center text-xl tracking-tight text-slate-900">
-                {staff.name}
-              </h3>
-              <p className="mt-1 text-center text-base tracking-tight text-slate-500">
+            <div key={staffIndex} className="font-sans">
+              <Image
+                className="inset-0 h-1/2 w-full cursor-pointer rounded-4xl object-cover"
+                src={staff.image}
+                alt=""
+                priority
+                sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
+                onClick={() => {
+                  setPerson(staff)
+                  setOpenCastsAndStaffsModal(true)
+                }}
+              />
+              <div className="mt-2 text-center">{staff.name}</div>
+              <div className="text-center text-sm text-gray-500">
                 {staff.role}
-              </p>
-              <div className="mt-1 text-lg tracking-tight text-slate-900">
-                {staff.description}
               </div>
             </div>
           ))}
         </div>
       </Container>
+      <CastsAndStaffsModal
+        openCastsAndStaffsModal={openCastsAndStaffsModal}
+        setOpenCastsAndStaffsModal={setOpenCastsAndStaffsModal}
+        person={person}
+      />
     </section>
   )
 }
