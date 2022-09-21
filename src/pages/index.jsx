@@ -13,6 +13,7 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
 
   const router = useRouter()
+  const mainRef = useRef(null)
   const outlineRef = useRef(null)
   const castsRef = useRef(null)
   const staffsRef = useRef(null)
@@ -26,7 +27,9 @@ export default function Home() {
   useLayoutEffect(() => {
     if (isLoading === true) return
 
-    if (router.asPath === '/#outline') {
+    if (router.asPath === '/') {
+      mainRef?.current?.scrollIntoView()
+    } else if (router.asPath === '/#outline') {
       outlineRef?.current?.scrollIntoView()
     } else if (router.asPath === '/#casts') {
       castsRef?.current?.scrollIntoView()
@@ -43,6 +46,7 @@ export default function Home() {
       </Head>
       <div>
         {isLoading && <Loader />}
+        <div ref={mainRef} />
         <Header />
         <main>
           <Main />
