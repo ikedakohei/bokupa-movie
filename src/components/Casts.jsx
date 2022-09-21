@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import Image from 'next/future/image'
-import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import { CastsAndStaffsModal } from '@/components/CastsAndStaffsModal'
@@ -166,7 +165,7 @@ export function Casts() {
           </div>
           <div className="grid grid-cols-2 gap-y-20 gap-x-10 font-sans sm:gap-y-16 md:grid-cols-4 [&:not(:focus-visible)]:focus:outline-none">
             {casts.map((cast, castIndex) => (
-              <div key={castIndex}>
+              <div key={castIndex} className="font-sans">
                 <Image
                   className="inset-0 h-full w-full cursor-pointer rounded-4xl object-cover"
                   src={cast.image}
