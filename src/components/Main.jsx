@@ -62,7 +62,7 @@ export function Main() {
         <Image className="mx-auto mt-0 mb-2 pt-0" src={foodsImage} alt="" />
         <div className="gap mx-4 mt-10 grid grid-cols-3 justify-center gap-x-2 gap-y-2 font-kaisei lg:hidden">
           <Link
-            href="/news"
+            href="#news"
             className="rounded bg-cyan-500 p-2 text-center text-xs text-white hover:bg-cyan-700 sm:text-base"
           >
             NEWS
@@ -86,7 +86,7 @@ export function Main() {
             スタッフ
           </Link>
           <Link
-            href="/theter"
+            href="#theter"
             className="rounded bg-cyan-500 p-2 text-center text-xs text-white hover:bg-cyan-700 sm:text-base"
           >
             劇場情報
