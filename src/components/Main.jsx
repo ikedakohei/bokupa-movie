@@ -20,7 +20,7 @@ export function Main() {
           </h2>
         </div>
         <Image className="mx-auto mb-2" src={mainImage} alt="" />
-        <div className="mx-auto max-w-xs text-center font-sans">
+        <div className="mx-auto max-w-xs text-center font-sans sm:max-w-xl">
           <p>川野邉修一 監督作品</p>
           <div className="my-2">
             <div className="mr-2 inline-block">橋詰高志</div>
@@ -31,7 +31,7 @@ export function Main() {
             <div className="mr-2 inline-block">窪田翔</div>
             <div className="inline-block">井之浦亮介</div>
           </div>
-          <div className="my-2 mx-auto text-xs">
+          <div className="my-2 mx-auto text-xs sm:text-sm">
             <div className="mr-2 inline-block">古矢航之介</div>
             <div className="mr-2 inline-block">宮崎勇希</div>
             <div className="mr-2 inline-block">がいママ</div>
@@ -48,7 +48,7 @@ export function Main() {
             <div className="mr-2 inline-block">藤松祥子</div>
             <div className="inline-block">永里健太郎</div>
           </div>
-          <div className="mx-auto mt-2 text-xs">
+          <div className="mx-auto mt-2 text-xs sm:hidden">
             <div>撮影: 猪本雅三 / 撮影助手(照明): 新里勝也</div>
             <div>録音: 安光雪江 / 編集・演出助手: 野坂拓彰</div>
             <div>制作: 村田潤 / 整音: 東凌太郎</div>
@@ -56,6 +56,18 @@ export function Main() {
             <div>衣装: 福原佐和子 / メイク: 東村忠明</div>
             <div>タイトルモーション: 藤林久哉</div>
             <div>タイトルデザイン: obktc</div>
+            <div>劇中曲: DJ SHINKAWA、御中レコード</div>
+          </div>
+          <div className="mx-auto mt-2 hidden text-sm sm:block">
+            <div>
+              撮影: 猪本雅三 / 撮影助手(照明): 新里勝也 / 録音: 安光雪江
+            </div>
+            <div>
+              編集・演出助手: 野坂拓彰 / 制作: 村田潤 / 整音: 東凌太郎 / 音楽:
+              礒﨑祥吾
+            </div>
+            <div>スチール: Sai / 衣装: 福原佐和子 / メイク: 東村忠明</div>
+            <div>タイトルモーション: 藤林久哉 / タイトルデザイン: obktc</div>
             <div>劇中曲: DJ SHINKAWA、御中レコード</div>
           </div>
         </div>
