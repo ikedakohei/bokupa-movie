@@ -163,7 +163,7 @@ export function Casts() {
               </h2>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-y-5 gap-x-5 font-sans sm:gap-y-16 md:grid-cols-4">
+          <div className="grid grid-cols-2 gap-y-5 gap-x-5 font-sans md:grid-cols-4">
             {casts.map((cast, castIndex) => (
               <div key={castIndex} className="font-sans">
                 <Image
