@@ -98,7 +98,7 @@ export function Staffs() {
                 }}
               />
               <div className="mt-2 text-center">{staff.name}</div>
-              <div className="text-center text-sm text-gray-500">
+              <div className="text-center text-xs text-gray-500 sm:text-sm">
                 {staff.role}
               </div>
             </div>

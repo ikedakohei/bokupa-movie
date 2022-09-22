@@ -178,7 +178,7 @@ export function Casts() {
                   }}
                 />
                 <div className="mt-2 text-center">{cast.name}</div>
-                <div className="text-center text-sm text-gray-500">
+                <div className="text-center text-xs text-gray-500 sm:text-sm">
                   {cast.role}
                 </div>
               </div>
