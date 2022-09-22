@@ -83,11 +83,11 @@ export function Staffs() {
             </h2>
           </div>
         </div>
-        <div className="mx-auto mb-16 grid grid-cols-2 gap-x-5 font-sans md:w-1/2">
+        <div className="mx-auto mb-8 grid grid-cols-2 gap-x-5 font-sans md:w-1/2">
           {staffs.map((staff, staffIndex) => (
             <div key={staffIndex} className="font-sans">
               <Image
-                className="inset-0 h-full w-full cursor-pointer rounded-4xl object-cover"
+                className="inset-0 mx-auto w-full cursor-pointer rounded-4xl object-cover sm:w-2/3"
                 src={staff.image}
                 alt=""
                 priority
