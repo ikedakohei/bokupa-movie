@@ -163,7 +163,7 @@ export function Casts() {
               </h2>
             </div>
           </div>
-          <div className="mb-16 grid grid-cols-2 gap-y-20 gap-x-10 font-sans sm:gap-y-16 md:grid-cols-4 [&:not(:focus-visible)]:focus:outline-none">
+          <div className="mb-16 grid grid-cols-2 gap-y-20 gap-x-5 font-sans sm:gap-y-16 md:grid-cols-4 [&:not(:focus-visible)]:focus:outline-none">
             {casts.map((cast, castIndex) => (
               <div key={castIndex} className="font-sans">
                 <Image

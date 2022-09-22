@@ -77,17 +77,17 @@ export function Staffs() {
           <div className="flex justify-center">
             <h2
               id="staffs-title"
-              className="font-display mb-12 border-l-2 border-yellow-300 px-2 pb-2 font-serif text-3xl font-bold tracking-tighter text-gray-900 sm:text-4xl"
+              className="mb-12 border-l-2 border-yellow-300 px-2 pb-2 font-serif text-3xl font-bold tracking-tighter text-gray-900 sm:text-4xl"
             >
               スタッフ
             </h2>
           </div>
         </div>
-        <div className="mx-auto grid grid-cols-2 gap-x-10 font-sans md:w-1/2">
+        <div className="mx-auto mb-16 grid grid-cols-2 gap-x-5 font-sans md:w-1/2">
           {staffs.map((staff, staffIndex) => (
             <div key={staffIndex} className="font-sans">
               <Image
-                className="inset-0 h-1/2 w-full cursor-pointer rounded-4xl object-cover"
+                className="inset-0 h-full w-full cursor-pointer rounded-4xl object-cover"
                 src={staff.image}
                 alt=""
                 priority

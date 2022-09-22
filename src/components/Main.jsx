@@ -9,7 +9,7 @@ export function Main() {
   return (
     <Container className="relative">
       <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
-        <Image className="mx-auto" src={titleImage} alt="" />
+        <Image className="mx-auto py-5" src={titleImage} alt="" />
         <div className="pb-6 text-center font-kaisei text-2xl leading-8">
           <h2>
             K{"'"}s cinema新宿にて
