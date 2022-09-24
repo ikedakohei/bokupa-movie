@@ -10,8 +10,6 @@ import { Outline } from '@/components/Outline'
 import { Staffs } from '@/components/Staffs'
 import { Casts } from '@/components/Casts'
 
-import ogpImage from '@/images/bhp_title.webp'
-
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
 

@@ -26,10 +26,7 @@ export default function Document() {
         <meta property="og:image:width" content="1147" />
         <meta property="og:image:height" content="640" />
 
-        <meta property="fb:app_id" content="760562615002782" />
-
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@BokupaM" />
         <meta name="twitter:domain" content="bokupa-movie.com" />
         <meta
           name="twitter:title"
