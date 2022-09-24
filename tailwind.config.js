@@ -33,7 +33,7 @@ module.exports = {
         '2xl': '40rem',
       },
       animation: {
-        slideIn: "slideIn 2s ease-in forwards",
+        slideIn: "slideIn 1s ease-in forwards",
       },
       keyframes: {
         slideIn: {
