@@ -87,7 +87,6 @@ export function Staffs() {
           {staffs.map((staff, staffIndex) => (
             <div key={staffIndex} className="font-sans">
               <Image
-                loading={'eager'}
                 className="inset-0 mx-auto w-full cursor-pointer rounded-4xl object-cover sm:w-2/3"
                 src={staff.image}
                 alt=""
