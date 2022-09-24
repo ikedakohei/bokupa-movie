@@ -9,6 +9,8 @@ import { Outline } from '@/components/Outline'
 import { Staffs } from '@/components/Staffs'
 import { Casts } from '@/components/Casts'
 
+import ogpImage from '@/images/bhp_title.webp'
+
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
 
@@ -41,8 +43,25 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>映画『ボクらのホームパーティー』公式サイト</title>
+        <title>映画 『ボクらのホームパーティー』 公式サイト</title>
         <meta name="description" content="ボクらのホームパーティー" />
+        <meta property="og:url" content="https://bokupa-movie.com" />
+        <meta
+          property="og:title"
+          content="映画 『ボクらのホームパーティー』 公式サイト"
+        />
+        <meta
+          property="og:site_name"
+          content="映画 『ボクらのホームパーティー』 公式サイト"
+        />
+        <meta
+          property="og:description"
+          content="川野邉修一監督自身の経験を基に、とあることから集まる7人のゲイ(男性同性愛者)によるホームパーティーを舞台とし、それぞれの生活や葛藤、また、友人・恋人・家族などの多様な人間模様を描いていく。"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={ogpImage} />
+        <meta property="og:image:width" content="800" />
+        <meta property="og:image:height" content="256" />
       </Head>
       <div>
         {isLoading && <Loader />}
