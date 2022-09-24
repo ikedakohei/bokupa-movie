@@ -48,7 +48,7 @@ export function CastsAndStaffsModal({
                     onClick={() => setOpenCastsAndStaffsModal(false)}
                   >
                     <XMarkIcon
-                      className="h-12 w-12 text-gray-400"
+                      className="h-12 w-12 cursor-pointer text-gray-400"
                       aria-hidden="true"
                     />
                   </div>
@@ -72,9 +72,11 @@ export function CastsAndStaffsModal({
                     <h3 className="mt-8 text-center text-xl tracking-tight text-slate-900">
                       {person?.name}
                     </h3>
-                    <p className="mt-1 text-center text-base tracking-tight text-slate-500">
-                      {person?.role}
-                    </p>
+                    {person?.role && (
+                      <p className="mt-1 text-center text-base tracking-tight text-slate-500">
+                        {person.role}
+                      </p>
+                    )}
                     <div className="mt-1 text-start text-lg tracking-tight text-slate-900">
                       {person?.description}
                     </div>
@@ -85,8 +87,11 @@ export function CastsAndStaffsModal({
                     className="flex justify-center rounded-md px-4 py-2 text-sm text-gray-400"
                     onClick={() => setOpenCastsAndStaffsModal(false)}
                   >
-                    閉じる
-                    <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                    <div className="cursor-pointer">閉じる</div>
+                    <XMarkIcon
+                      className="h-6 w-6 cursor-pointer"
+                      aria-hidden="true"
+                    />
                   </div>
                 </div>
               </Dialog.Panel>

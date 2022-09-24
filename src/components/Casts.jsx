@@ -12,6 +12,17 @@ import akitoImage from '@/images/casts/akito.webp'
 import yasushiImage from '@/images/casts/yasushi.webp'
 import kenichiImage from '@/images/casts/kenichi.webp'
 
+import cast01Image from '@/images/casts/01_cast.webp'
+import cast02Image from '@/images/casts/02_cast.webp'
+import cast03Image from '@/images/casts/03_cast.webp'
+import cast04Image from '@/images/casts/04_cast.webp'
+import cast05Image from '@/images/casts/05_cast.webp'
+import cast06Image from '@/images/casts/06_cast.webp'
+import cast07Image from '@/images/casts/07_cast.webp'
+import cast08Image from '@/images/casts/08_cast.webp'
+import cast09Image from '@/images/casts/09_cast.webp'
+import cast10Image from '@/images/casts/10_cast.webp'
+
 const casts = [
   {
     name: '橋詰 高志',
@@ -40,9 +51,9 @@ const casts = [
         <p className="mb-1">1988年8月25日、群馬県出身。</p>
         <p>
           映像を中心に活動。
-          過去の出演作は、『続・悪い女はよく眠る』、（2017/作・演出 萩庭貞明
-          ）、『2020年
-          東京。12人の役者たち』『パレット』（2020/松本動監督）、『佐々木、イン、マイマ
+          過去の出演作は、『続・悪い女はよく眠る』、（2017/作・演出
+          萩庭貞明）、『2020年 東京。
+          12人の役者たち』『パレット』（2020/松本動監督）、『佐々木、イン、マイマ
           イン』（2020/内山拓也監督）に出演。
         </p>
         <p>
@@ -160,6 +171,148 @@ const casts = [
   },
 ]
 
+const subCasts = [
+  {
+    name: '古矢 航之介',
+    description: (
+      <>
+        <p className="mb-1">1994年12月29日生まれ、静岡県出身。</p>
+        <p>
+          出演作『春みたいだ』（2017/シガヤダイスケ監督）が国内外数多くの映画祭で上映され、その反響から役者の道に入る。
+          近年は、映像作品を中心にメジャー、インディーズ問わず活動を続ける。
+          本作が川野邉監督作品初参加。
+        </p>
+      </>
+    ),
+    image: cast01Image,
+  },
+  {
+    name: '外 能久',
+    description: (
+      <>
+        <p className="mb-1">
+          俳優として、テレビ・CM・舞台などを中心に活躍。
+          代表作に、映画『37second』、『えちてつ物語』、テレビ東京『歴史ミステリーロマン･戦国』、舞台『男たちのバラードMEN&amp;MAN』、雑
+          誌『モーターファン』など。
+        </p>
+      </>
+    ),
+    image: cast02Image,
+  },
+  {
+    name: 'ヒノ影アラン',
+    description: (
+      <>
+        <p className="mb-1">1996年10月31日生まれ、北海道出身。</p>
+        <p>
+          ワードシーカー・演出家。2018年に「創作ユニットヤマアラシ」を立ち上げ演劇作品の発表などを行う。
+          アーティストの個展に詩を提供するなど、言葉に関する仕事を生業とする。
+          役者として映画に出演するのは、今回が初。
+        </p>
+      </>
+    ),
+    image: cast03Image,
+  },
+  {
+    name: '江南知幸',
+    description: (
+      <>
+        <p className="mb-1">1981年生まれ。京都出身。</p>
+        <p>
+          音楽の専門学校に進学し、学内グランプリを獲得するも卒業後はそのまま就職。
+          IT企業に約10年勤めた後、俳優に転向。
+          座右の銘は『言わんほうがええ事は、言わんほうがええ』。
+          飄々としたキャラクターで、劇団未成年にて活躍中。
+        </p>
+      </>
+    ),
+    image: cast04Image,
+  },
+  {
+    name: '宮寺貴也',
+    description: (
+      <>
+        <p className="mb-1">
+          俳優。高校卒業後、塩屋俊アクターズクリニックにて、塩屋メゾットを数年学び、原作物舞台でデビュー。
+          ストレートプレイ、コント、広告、映像等。
+          確かな経験を元に硬軟問わない、幅広い役柄を演じ分けられる事が特徴。
+          近年は映画を中心に活動。
+        </p>
+      </>
+    ),
+    image: cast05Image,
+  },
+  {
+    name: '飯川瑠夏',
+    description: (
+      <>
+        <p className="mb-1">1997年8月21日、北海道出身。</p>
+        <p>
+          文学座附属演劇研究所卒業。
+          所内の舞台、文学座アトリエの会での出演を経験。
+        </p>
+      </>
+    ),
+    image: cast06Image,
+  },
+  {
+    name: '見里瑞穂',
+    description: (
+      <>
+        <p className="mb-1">
+          東京都出身。青山学院大学在学中から演技を始める。
+          初主演作「したさきのさき」が、ぴあフィルムフェスティバル2015にて、4冠を達成。
+          また、2021年話題となったコマ撮りアニメ「PUI PUI
+          モルカー」の実写パートに出演し、モルモット好きの間で知られる存在に。
+          現在新作映画を撮影中。
+        </p>
+      </>
+    ),
+    image: cast07Image,
+  },
+  {
+    name: '鈴木拓磨',
+    description: (
+      <>
+        <p className="mb-1">1986年7月9日、埼玉県出身。</p>
+        <p>
+          自主映画を中心に役者として活動している中で、違う立場からの映画制作に興味を持ち、これまで自身でも監督として、『おもいとらわれ』（2017）『ウラアカ』（2017）と2本制作した。
+        </p>
+      </>
+    ),
+    image: cast08Image,
+  },
+  {
+    name: '藤松祥子',
+    description: (
+      <>
+        <p className="mb-1">1993年生まれ、東京都出身。</p>
+        <p>
+          2015年劇団青年団入団。
+          劇団公演のほか、月刊「根本宗子」、劇団チョコレートケーキ、遊園地再生事業団など多数客演。
+          現在は映画・ドラマにも活躍の場を広げている。
+          舞台『夜は短し歩けよ乙女』（脚本・演出： 上田誠）に出演。
+        </p>
+      </>
+    ),
+    image: cast09Image,
+  },
+  {
+    name: '永里健太朗',
+    description: (
+      <>
+        <p className="mb-1">1993年生まれ、東京都出身。</p>
+        <p>
+          18歳で鹿児島から上京。演劇ユニット『47ENGINE』で役者として活動しながら月一短編演劇イベントにて脚本、演出も多数手掛ける。
+          舞台、映画、ドラマ、CM等多方面で活動し2019年には脚本、演出、出演で初長編舞台を公演。
+          2020年からはiPhoneで撮影した短編映画等も製作している。
+        </p>
+      </>
+    ),
+    image: cast10Image,
+  },
+]
+
 export function Casts() {
   const [openCastsAndStaffsModal, setOpenCastsAndStaffsModal] = useState(false)
   const [person, setPerson] = useState({})
@@ -199,6 +352,26 @@ export function Casts() {
                 <div className="mt-2 text-center">{cast.name}</div>
                 <div className="text-center text-xs text-gray-500 sm:text-sm">
                   {cast.role}
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="mt-16 grid grid-cols-3 gap-y-5 gap-x-5 font-sans md:grid-cols-5">
+            {subCasts.map((cast, castIndex) => (
+              <div key={castIndex} className="font-sans">
+                <Image
+                  className="inset-0 mx-auto w-full cursor-pointer rounded-2xl object-cover sm:w-2/3"
+                  src={cast.image}
+                  alt=""
+                  priority
+                  sizes="(min-width: 1280px) 17.5rem, (min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
+                  onClick={() => {
+                    setPerson(cast)
+                    setOpenCastsAndStaffsModal(true)
+                  }}
+                />
+                <div className="mt-2 text-center text-xs sm:text-sm">
+                  {cast.name}
                 </div>
               </div>
             ))}
