@@ -25,10 +25,24 @@ export default function Document() {
         />
         <meta property="og:image:width" content="1147" />
         <meta property="og:image:height" content="640" />
+
         <meta property="fb:app_id" content="760562615002782" />
+
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@BokupaM" />
-        <meta name="twitter:player" content="@BokupaM" />
+        <meta name="twitter:domain" content="bokupa-movie.com" />
+        <meta
+          name="twitter:title"
+          content="映画 『ボクらのホームパーティー』 公式サイト"
+        />
+        <meta
+          name="twitter:description"
+          content="川野邉修一監督自身の経験を基に、とあることから集まる7人のゲイ(男性同性愛者)によるホームパーティーを舞台とし、それぞれの生活や葛藤、また、友人・恋人・家族などの多様な人間模様を描いていく。"
+        />
+        <meta
+          name="twitter:image"
+          content="https://i.gyazo.com/8d70e304e4716c8fba20e0412aff0cec.jpg"
+        />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link

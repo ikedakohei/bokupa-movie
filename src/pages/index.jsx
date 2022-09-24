@@ -5,6 +5,7 @@ import { Loader } from '@/components/Loader'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Main } from '@/components/Main'
+import { DirectorMessage } from '@/components/DirectorMessage'
 import { Outline } from '@/components/Outline'
 import { Staffs } from '@/components/Staffs'
 import { Casts } from '@/components/Casts'
@@ -51,6 +52,7 @@ export default function Home() {
         <Header />
         <main>
           <Main />
+          <DirectorMessage />
           <div ref={outlineRef} />
           <Outline />
           <div ref={castsRef} />
