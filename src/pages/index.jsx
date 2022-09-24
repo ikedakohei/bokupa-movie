@@ -59,7 +59,10 @@ export default function Home() {
           content="川野邉修一監督自身の経験を基に、とあることから集まる7人のゲイ(男性同性愛者)によるホームパーティーを舞台とし、それぞれの生活や葛藤、また、友人・恋人・家族などの多様な人間模様を描いていく。"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content={ogpImage} />
+        <meta
+          property="og:image"
+          content="https://i.gyazo.com/8d70e304e4716c8fba20e0412aff0cec.jpg"
+        />
         <meta property="og:image:width" content="800" />
         <meta property="og:image:height" content="256" />
       </Head>
