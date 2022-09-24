@@ -24,6 +24,7 @@ export default function Home() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false)
+      document.querySelector('body').classList.remove('overflow-hidden')
     }, 3000)
   }, [])
 
