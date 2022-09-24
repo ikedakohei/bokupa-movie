@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useLayoutEffect, useRef } from 'react'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
 import { Loader } from '@/components/Loader'
@@ -19,7 +19,7 @@ export default function Home() {
   const castsRef = useRef(null)
   const staffsRef = useRef(null)
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     document.querySelector('body').classList.add('overflow-hidden')
 
     if (!isLoading) {
