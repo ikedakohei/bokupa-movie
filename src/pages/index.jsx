@@ -63,8 +63,8 @@ export default function Home() {
           property="og:image"
           content="https://i.gyazo.com/8d70e304e4716c8fba20e0412aff0cec.jpg"
         />
-        <meta property="og:image:width" content="800" />
-        <meta property="og:image:height" content="256" />
+        <meta property="og:image:width" content="1147" />
+        <meta property="og:image:height" content="640" />
       </Head>
       <div>
         {isLoading && <Loader />}
