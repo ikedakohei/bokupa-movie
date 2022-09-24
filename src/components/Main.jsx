@@ -20,9 +20,7 @@ export const Main = ({ setIsLoading }) => {
       mainImageLoadingComplete &&
       foodsImageLoadingComplete
     ) {
-      setTimeout(() => {
-        setIsLoading(false)
-      }, 1000)
+      setIsLoading(false)
     }
   }, [
     foodsImageLoadingComplete,
