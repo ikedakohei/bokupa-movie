@@ -61,6 +61,7 @@ export function CastsAndStaffsModal({
                           )}
                         />
                         <Image
+                          loading={'eager'}
                           className="absolute inset-0 h-full w-full rounded-4xl object-cover"
                           src={person?.image}
                           alt=""

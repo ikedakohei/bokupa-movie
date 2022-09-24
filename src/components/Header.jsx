@@ -51,6 +51,7 @@ export function Header() {
           <div className="relative z-10 flex items-center gap-16">
             <Link href="/" aria-label="Home">
               <Image
+                loading={'eager'}
                 src={mainLogo}
                 alt=""
                 className="h-10 w-auto rounded-full"
