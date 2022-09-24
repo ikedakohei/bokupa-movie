@@ -1,6 +1,7 @@
 import { useState, useEffect, useLayoutEffect, useRef } from 'react'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
+import { scrollFadeIn } from '@/components/scrollFadeIn'
 import { Loader } from '@/components/Loader'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
@@ -41,6 +42,10 @@ export default function Home() {
     }
   }, [isLoading, router.asPath])
 
+  useEffect(() => {
+    scrollFadeIn()
+  }, [])
+
   return (
     <>
       <Head>
@@ -51,14 +56,24 @@ export default function Home() {
         <div ref={mainRef} />
         <Header />
         <main>
-          <Main setIsLoading={setIsLoading} />
-          <DirectorMessage />
+          <div className="js-show-on-scroll">
+            <Main setIsLoading={setIsLoading} />
+          </div>
+          <div className="js-show-on-scroll">
+            <DirectorMessage />
+          </div>
           <div ref={outlineRef} />
-          <Outline />
+          <div className="js-show-on-scroll">
+            <Outline />
+          </div>
           <div ref={castsRef} />
-          <Casts />
+          <div className="js-show-on-scroll">
+            <Casts />
+          </div>
           <div ref={staffsRef} />
-          <Staffs />
+          <div className="js-show-on-scroll">
+            <Staffs />
+          </div>
         </main>
         <Footer />
       </div>

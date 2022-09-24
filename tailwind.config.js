@@ -32,6 +32,19 @@ module.exports = {
       maxWidth: {
         '2xl': '40rem',
       },
+      animation: {
+        slideIn: "slideIn 2s ease-in forwards",
+      },
+      keyframes: {
+        slideIn: {
+          "0%": {
+            opacity: 0,
+          },
+          "100%": {
+            opacity: 1,
+          },
+        },
+      },
     },
   },
   plugins: [],
