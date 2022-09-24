@@ -214,7 +214,7 @@ const subCasts = [
     image: cast03Image,
   },
   {
-    name: '江南知幸',
+    name: '江南 知幸',
     description: (
       <>
         <p className="mb-1">1981年生まれ。京都出身。</p>
@@ -229,7 +229,7 @@ const subCasts = [
     image: cast04Image,
   },
   {
-    name: '宮寺貴也',
+    name: '宮寺 貴也',
     description: (
       <>
         <p className="mb-1">
@@ -243,7 +243,7 @@ const subCasts = [
     image: cast05Image,
   },
   {
-    name: '飯川瑠夏',
+    name: '飯川 瑠夏',
     description: (
       <>
         <p className="mb-1">1997年8月21日、北海道出身。</p>
@@ -256,7 +256,7 @@ const subCasts = [
     image: cast06Image,
   },
   {
-    name: '見里瑞穂',
+    name: '見里 瑞穂',
     description: (
       <>
         <p className="mb-1">
@@ -271,7 +271,7 @@ const subCasts = [
     image: cast07Image,
   },
   {
-    name: '鈴木拓磨',
+    name: '鈴木 拓磨',
     description: (
       <>
         <p className="mb-1">1986年7月9日、埼玉県出身。</p>
@@ -283,7 +283,7 @@ const subCasts = [
     image: cast08Image,
   },
   {
-    name: '藤松祥子',
+    name: '藤松 祥子',
     description: (
       <>
         <p className="mb-1">1993年生まれ、東京都出身。</p>
@@ -298,7 +298,7 @@ const subCasts = [
     image: cast09Image,
   },
   {
-    name: '永里健太朗',
+    name: '永里 健太朗',
     description: (
       <>
         <p className="mb-1">1993年生まれ、東京都出身。</p>
