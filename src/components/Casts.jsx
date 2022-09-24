@@ -339,6 +339,7 @@ export function Casts() {
             {casts.map((cast, castIndex) => (
               <div key={castIndex} className="font-sans">
                 <Image
+                  loading={'eager'}
                   className="inset-0 mx-auto w-full cursor-pointer  rounded-4xl object-cover sm:w-2/3"
                   src={cast.image}
                   alt=""
@@ -360,6 +361,7 @@ export function Casts() {
             {subCasts.map((cast, castIndex) => (
               <div key={castIndex} className="font-sans">
                 <Image
+                  loading={'eager'}
                   className="inset-0 mx-auto w-full cursor-pointer rounded-2xl object-cover sm:w-2/3"
                   src={cast.image}
                   alt=""

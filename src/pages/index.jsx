@@ -1,4 +1,4 @@
-import { useState, useEffect, useLayoutEffect, useRef } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
 import { Loader } from '@/components/Loader'
@@ -20,13 +20,14 @@ export default function Home() {
   const staffsRef = useRef(null)
 
   useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false)
-      document.querySelector('body').classList.remove('overflow-hidden')
-    }, 3000)
-  }, [])
+    document.querySelector('body').classList.add('overflow-hidden')
 
-  useLayoutEffect(() => {
+    if (!isLoading) {
+      document.querySelector('body').classList.remove('overflow-hidden')
+    }
+  }, [isLoading])
+
+  useEffect(() => {
     if (isLoading === true) return
 
     if (router.asPath === '/') {
@@ -50,7 +51,7 @@ export default function Home() {
         <div ref={mainRef} />
         <Header />
         <main>
-          <Main />
+          <Main setIsLoading={setIsLoading} />
           <DirectorMessage />
           <div ref={outlineRef} />
           <Outline />

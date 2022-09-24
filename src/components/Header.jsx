@@ -51,6 +51,7 @@ export function Header() {
           <div className="relative z-10 flex items-center gap-16">
             <Link href="/" aria-label="Home">
               <Image
+                loading={'eager'}
                 src={mainLogo}
                 alt=""
                 className="h-10 w-auto rounded-full"
@@ -100,20 +101,20 @@ export function Header() {
                           className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pb-4 pt-16 shadow-2xl shadow-gray-900/20"
                         >
                           <div className="space-y-3 font-kaisei">
-                            <MobileNavLink href="#news">NEWS</MobileNavLink>
-                            <MobileNavLink href="#outline">
+                            <MobileNavLink href="/news">NEWS</MobileNavLink>
+                            <MobileNavLink href="/#outline">
                               あらすじ
                             </MobileNavLink>
-                            <MobileNavLink href="#casts">
+                            <MobileNavLink href="/#casts">
                               キャスト
                             </MobileNavLink>
-                            <MobileNavLink href="#staffs">
+                            <MobileNavLink href="/#staffs">
                               スタッフ
                             </MobileNavLink>
-                            <MobileNavLink href="#theaters">
+                            <MobileNavLink href="/theaters">
                               劇場情報
                             </MobileNavLink>
-                            <MobileNavLink href="#campaigns">
+                            <MobileNavLink href="/campaigns">
                               キャンペーン
                             </MobileNavLink>
                           </div>

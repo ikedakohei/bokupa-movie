@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import { Container } from '@/components/Container'
 import Link from 'next/link'
 import Image from 'next/future/image'
@@ -5,11 +6,43 @@ import titleImage from '@/images/bhp_title.webp'
 import mainImage from '@/images/main.webp'
 import foodsImage from '@/images/foods.webp'
 
-export function Main() {
+export const Main = ({ setIsLoading }) => {
+  const [titleImageLoadingComplete, setTitleImageLoadingComplete] =
+    useState(false)
+  const [mainImageLoadingComplete, setMainImageLoadingComplete] =
+    useState(false)
+  const [foodsImageLoadingComplete, setFoodsImageLoadingComplete] =
+    useState(false)
+
+  useEffect(() => {
+    if (
+      titleImageLoadingComplete &&
+      mainImageLoadingComplete &&
+      foodsImageLoadingComplete
+    ) {
+      setTimeout(() => {
+        setIsLoading(false)
+      }, 1000)
+    }
+  }, [
+    foodsImageLoadingComplete,
+    mainImageLoadingComplete,
+    setIsLoading,
+    titleImageLoadingComplete,
+  ])
+
   return (
     <Container className="relative">
       <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
-        <Image className="mx-auto py-5" src={titleImage} alt="" />
+        <Image
+          onLoadingComplete={() => {
+            setTitleImageLoadingComplete(true)
+          }}
+          loading={'eager'}
+          className="mx-auto py-5"
+          src={titleImage}
+          alt=""
+        />
         <div className="pb-6 text-center font-kaisei text-2xl leading-8">
           <h2>
             K{"'"}s cinema新宿にて
@@ -19,7 +52,15 @@ export function Main() {
             より劇場公開
           </h2>
         </div>
-        <Image className="mx-auto mb-2" src={mainImage} alt="" />
+        <Image
+          onLoadingComplete={() => {
+            setMainImageLoadingComplete(true)
+          }}
+          loading={'eager'}
+          className="mx-auto mb-2"
+          src={mainImage}
+          alt=""
+        />
         <div className="mx-auto max-w-xs text-center font-sans sm:max-w-xl">
           <p>川野邉修一 監督作品</p>
           <div className="my-2">
@@ -71,40 +112,48 @@ export function Main() {
             <div>劇中曲: DJ SHINKAWA、御中レコード</div>
           </div>
         </div>
-        <Image className="mx-auto mt-0 mb-2 pt-0" src={foodsImage} alt="" />
+        <Image
+          onLoadingComplete={() => {
+            setFoodsImageLoadingComplete(true)
+          }}
+          loading={'eager'}
+          className="mx-auto mt-0 mb-2 pt-0"
+          src={foodsImage}
+          alt=""
+        />
         <div className="gap mx-4 mt-10 grid grid-cols-3 justify-center gap-x-2 gap-y-2 font-kaisei lg:hidden">
           <Link
-            href="#news"
+            href="/news"
             className="rounded bg-cyan-500 p-2 text-center text-xs text-white hover:bg-cyan-700 sm:text-base"
           >
             NEWS
           </Link>
           <Link
-            href="#outline"
+            href="/#outline"
             className="rounded bg-cyan-500 p-2 text-center text-xs text-white hover:bg-cyan-700 sm:text-base"
           >
             あらすじ
           </Link>
           <Link
-            href="#casts"
+            href="/#casts"
             className="rounded bg-cyan-500 p-2 text-center text-xs text-white hover:bg-cyan-700 sm:text-base"
           >
             キャスト
           </Link>
           <Link
-            href="#staffs"
+            href="/#staffs"
             className="rounded bg-cyan-500 p-2 text-center text-xs text-white hover:bg-cyan-700 sm:text-base"
           >
             スタッフ
           </Link>
           <Link
-            href="#theters"
+            href="/theaters"
             className="rounded bg-cyan-500 p-2 text-center text-xs text-white hover:bg-cyan-700 sm:text-base"
           >
             劇場情報
           </Link>
           <Link
-            href="#campaigns"
+            href="/campaigns"
             className="rounded bg-cyan-500 p-2 text-center text-xs text-white hover:bg-cyan-700 sm:text-base"
           >
             キャンペーン
