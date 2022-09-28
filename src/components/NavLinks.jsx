@@ -6,7 +6,7 @@ export function NavLinks() {
   let [hoveredIndex, setHoveredIndex] = useState(null)
 
   return [
-    ['NEWS', '/news'],
+    ['NEWS', 'https://bokupa-movie-news.tumblr.com/'],
     ['あらすじ', '/#outline'],
     ['キャスト', '/#casts'],
     ['スタッフ', '/#staffs'],
