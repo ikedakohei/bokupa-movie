@@ -121,8 +121,7 @@ export const Main = ({ setIsLoading }) => {
         />
         <div className="gap mx-4 mt-10 grid grid-cols-3 justify-center gap-x-2 gap-y-2 font-kaisei lg:hidden">
           <Link
-            href="https://bokupa-movie-news.tumblr.com/"
-            target="_blank"
+            href="https://bokupa-movie-news.tumblr.com"
             className="rounded bg-cyan-500 p-2 text-center text-xs text-white hover:bg-cyan-700 sm:text-base"
           >
             NEWS
