@@ -10,7 +10,7 @@ export function DirectorMessage() {
         >
           <div className="flex justify-center">
             <h2 className="mb-4 font-kaisei text-3xl tracking-tighter text-gray-900">
-              監督よりご挨拶
+              監督コメント
             </h2>
           </div>
           <p className="mb-5">
