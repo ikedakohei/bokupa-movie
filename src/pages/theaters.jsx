@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import { Container } from '@/components/Container'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
@@ -7,6 +8,7 @@ const theaters = [
   {
     place: '東京',
     name: "K's cinema新宿",
+    link: 'https://www.ks-cinema.com',
     date: '2022/11/19（土）～',
   },
 ]
@@ -67,7 +69,13 @@ export default function Theaters() {
                                       {theater.place}
                                     </td>
                                     <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-900">
-                                      {theater.name}
+                                      <Link
+                                        href={theater.link}
+                                        target="_blank"
+                                        className="underline"
+                                      >
+                                        {theater.name}
+                                      </Link>
                                     </td>
                                     <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-900">
                                       {theater.date}
