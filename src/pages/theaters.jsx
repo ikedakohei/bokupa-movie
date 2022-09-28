@@ -3,7 +3,15 @@ import { Container } from '@/components/Container'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 
-export default function Home() {
+const theaters = [
+  {
+    place: '東京',
+    name: "K's cinema新宿",
+    date: '2022/11/19（土）～',
+  },
+]
+
+export default function Theaters() {
   return (
     <>
       <Head>
@@ -24,7 +32,55 @@ export default function Home() {
                       劇場情報
                     </h2>
                   </div>
-                  <p className="text-center text-2xl">作成中...</p>
+                  <div className="px-4 sm:px-6 lg:px-8">
+                    <div className="mt-8 flex flex-col">
+                      <div className="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                        <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
+                          <div className="overflow-hidden ring-1 ring-black ring-opacity-5 md:rounded">
+                            <table className="min-w-full divide-y divide-gray-500 font-sans">
+                              <thead className="bg-neutral-500">
+                                <tr>
+                                  <th
+                                    scope="col"
+                                    className="py-3.5 pl-4 pr-3 text-left text-sm font-normal text-white sm:pl-6"
+                                  >
+                                    地域
+                                  </th>
+                                  <th
+                                    scope="col"
+                                    className="px-3 py-3.5 text-left text-sm font-normal text-white"
+                                  >
+                                    劇場名
+                                  </th>
+                                  <th
+                                    scope="col"
+                                    className="px-3 py-3.5 text-left text-sm font-normal text-white"
+                                  >
+                                    上映日
+                                  </th>
+                                </tr>
+                              </thead>
+                              <tbody className="divide-y divide-gray-400 bg-white">
+                                {theaters.map((theater) => (
+                                  <tr key={theater.name}>
+                                    <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
+                                      {theater.place}
+                                    </td>
+                                    <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-900">
+                                      {theater.name}
+                                    </td>
+                                    <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-900">
+                                      {theater.date}
+                                    </td>
+                                  </tr>
+                                ))}
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </Container>
