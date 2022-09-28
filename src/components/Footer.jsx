@@ -13,7 +13,7 @@ export function Footer() {
           className="h-12 w-auto text-slate-900"
         />
         <p className="mt-6 font-sans text-xs text-slate-500 md:mt-0 md:ml-8">
-          Copyright &copy; ボクらのホームパーティー制作委員会
+          Copyright &copy; 野辺組
         </p>
       </Container>
     </footer>
