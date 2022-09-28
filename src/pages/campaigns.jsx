@@ -11,26 +11,24 @@ export default function Campaigns() {
         </title>
       </Head>
       <div>
-        <div className="flex h-screen flex-col">
-          <Header />
-          <main className="flex-grow">
-            <Container className="relative">
-              <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
-                <div
-                  id="outline"
-                  className="space-y-6 pt-4 font-sans text-lg tracking-tight text-gray-900 md:pt-8"
-                >
-                  <div className="flex justify-center">
-                    <h2 className="mb-4 pb-2 font-kaisei text-3xl tracking-tighter text-gray-900 sm:text-4xl">
-                      キャンペーン
-                    </h2>
-                  </div>
-                  <p className="text-center text-2xl">作成中...</p>
+        <Header />
+        <main>
+          <Container className="relative">
+            <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
+              <div
+                id="outline"
+                className="space-y-6 pt-4 font-sans text-lg tracking-tight text-gray-900 md:pt-8"
+              >
+                <div className="flex justify-center">
+                  <h2 className="mb-4 pb-2 font-kaisei text-3xl tracking-tighter text-gray-900 sm:text-4xl">
+                    キャンペーン
+                  </h2>
                 </div>
+                <p className="text-center text-2xl">作成中...</p>
               </div>
-            </Container>
-          </main>
-        </div>
+            </div>
+          </Container>
+        </main>
       </div>
     </>
   )
