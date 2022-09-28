@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { Container } from '@/components/Container'
-import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 
 const theaters = [
@@ -72,6 +71,7 @@ export default function Theaters() {
                                       <Link
                                         href={theater.link}
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                         className="underline"
                                       >
                                         {theater.name}
@@ -93,7 +93,6 @@ export default function Theaters() {
               </div>
             </Container>
           </main>
-          <Footer />
         </div>
       </div>
     </>

@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import { Container } from '@/components/Container'
-import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 
 export default function Campaigns() {
@@ -31,7 +30,6 @@ export default function Campaigns() {
               </div>
             </Container>
           </main>
-          <Footer />
         </div>
       </div>
     </>
