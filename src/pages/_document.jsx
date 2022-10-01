@@ -4,6 +4,7 @@ export default function Document() {
   return (
     <Html className="bg-white antialiased" lang="ja">
       <Head>
+        <link rel="shortcut icon" href="/favicon.ico" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
