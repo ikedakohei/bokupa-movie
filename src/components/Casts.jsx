@@ -22,6 +22,7 @@ import cast07Image from '@/images/casts/07_cast.webp'
 import cast08Image from '@/images/casts/08_cast.webp'
 import cast09Image from '@/images/casts/09_cast.webp'
 import cast10Image from '@/images/casts/10_cast.webp'
+import cast11Image from '@/images/casts/11_cast.webp'
 
 const casts = [
   {
@@ -185,6 +186,22 @@ const subCasts = [
       </>
     ),
     image: cast01Image,
+  },
+  {
+    name: 'ふぁそら',
+    description: (
+      <>
+        <p className="mb-1">1995年1月14日生まれ、福岡県朝倉市出身。</p>
+        <p>
+          2011年から音楽活動を始める。
+          『ポシュレデパート深夜店』（2011/オープニングテーマ）、『ゲーマーズTV夜遊び三姉妹』（2012/エンディングテーマ）。
+          ライブをメインに活動するが2015年に活動休止。
+          2018年に自主映画に出演したのをきっかけに複数の作品に出演する。
+          2022年9月から男女混合4人組バンド「liLsheeps（リルシープス）」のヴォーカルとして活動を始動した。
+        </p>
+      </>
+    ),
+    image: cast11Image,
   },
   {
     name: '外 能久',
