@@ -72,7 +72,7 @@ export const Main = ({ setIsLoading }) => {
           </div>
           <div className="my-2 mx-auto text-xs sm:text-sm">
             <div className="mr-2 inline-block">古矢航之介</div>
-            <div className="mr-2 inline-block">宮崎勇希</div>
+            <div className="mr-2 inline-block">ふぁそら</div>
             <div className="mr-2 inline-block">がいママ</div>
             <div className="mr-2 inline-block">坪井東</div>
             <div className="mr-2 inline-block">ヒノ影アラン</div>
