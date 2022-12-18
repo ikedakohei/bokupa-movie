@@ -5,10 +5,22 @@ import { Header } from '@/components/Header'
 
 const theaters = [
   {
-    place: '東京',
+    place: '新宿',
     name: "K's cinema新宿",
     link: 'https://www.ks-cinema.com',
-    date: '2022/11/19（土）～',
+    date: '2022/01/07（土）～',
+  },
+  {
+    place: '大阪',
+    name: 'シアターセブン',
+    link: 'https://www.theater-seven.com',
+    date: '2023/01/21（土）～',
+  },
+  {
+    place: '名古屋',
+    name: 'シネマスコーレ',
+    link: 'http://www.cinemaskhole.co.jp/cinema/html',
+    date: '2023年2月～3月予定',
   },
 ]
 
