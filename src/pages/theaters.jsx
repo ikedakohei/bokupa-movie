@@ -8,19 +8,21 @@ const theaters = [
     place: '新宿',
     name: "K's cinema新宿",
     link: 'https://www.ks-cinema.com',
-    date: '2022/01/07（土）～',
+    date: '2023年1月7日(土)〜1月13日(金) ',
+    time: '連日午前10:00から',
   },
   {
     place: '大阪',
     name: 'シアターセブン',
     link: 'https://www.theater-seven.com',
-    date: '2023/01/21（土）～',
+    date: '2023年1月21日(土)〜1月27日(金)',
+    time: '※時間調整中',
   },
   {
     place: '名古屋',
     name: 'シネマスコーレ',
     link: 'http://www.cinemaskhole.co.jp/cinema/html',
-    date: '2023年2月～3月予定',
+    date: '2023年2〜3月予定',
   },
 ]
 
@@ -64,12 +66,6 @@ export default function Theaters() {
                                 >
                                   劇場名
                                 </th>
-                                <th
-                                  scope="col"
-                                  className="px-3 py-3.5 text-left text-sm font-normal text-white"
-                                >
-                                  上映日
-                                </th>
                               </tr>
                             </thead>
                             <tbody className="divide-y divide-gray-400 bg-white">
@@ -87,9 +83,14 @@ export default function Theaters() {
                                     >
                                       {theater.name}
                                     </Link>
-                                  </td>
-                                  <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-900">
+                                    <br />
                                     {theater.date}
+                                    {theater.time !== undefined && (
+                                      <>
+                                        <br />
+                                        {theater.time}
+                                      </>
+                                    )}
                                   </td>
                                 </tr>
                               ))}
