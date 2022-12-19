@@ -5,7 +5,7 @@ import { Header } from '@/components/Header'
 
 const theaters = [
   {
-    place: '新宿',
+    place: '東京',
     name: "K's cinema新宿",
     link: 'https://www.ks-cinema.com',
     date: '2023年1月7日(土)〜1月13日(金) ',
