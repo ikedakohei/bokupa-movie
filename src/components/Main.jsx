@@ -45,9 +45,9 @@ export const Main = ({ setIsLoading }) => {
           <h2>
             K{"'"}s cinema新宿にて
             <br />
-            2022年11月19日（土）
+            2023年1月7日（土）
             <br />
-            より劇場公開
+            より追加上映決定！
           </h2>
         </div>
         <Image
