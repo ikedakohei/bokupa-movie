@@ -8,8 +8,8 @@ const theaters = [
     place: '東京',
     name: "K's cinema新宿",
     link: 'https://www.ks-cinema.com',
-    date: '2023年1月7日(土)〜1月13日(金) ',
-    time: '連日午前10:00から',
+    date: <span>2022年11月19日(土)〜12月2日(金)<br />2023年1月7日(土)〜1月13日(金) </span>,
+    time: '上映終了',
   },
   {
     place: '大阪',
