@@ -43,11 +43,11 @@ export const Main = ({ setIsLoading }) => {
         />
         <div className="pb-6 text-center font-kaisei text-2xl leading-8">
           <h2>
-            K{"'"}s cinema新宿にて
+            シアターセブン(大阪)にて
             <br />
-            2023年1月7日（土）
+            2023年1月21日（土）
             <br />
-            より追加上映決定！
+            より上映決定！
           </h2>
         </div>
         <Image

@@ -16,6 +16,7 @@ const theaters = [
     name: 'シアターセブン',
     link: 'https://www.theater-seven.com',
     date: '2023年1月21日(土)〜1月27日(金)',
+    time: <span className="text-xs">1月21日(土)・22日(日) 18:00から<br />1月23日(月)〜27日(金) 18:50から</span>
   },
   {
     place: '名古屋',
