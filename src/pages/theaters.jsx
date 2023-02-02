@@ -25,16 +25,16 @@ const theaters = [
     time: '上映終了',
   },
   {
-    place: '名古屋',
-    name: 'シネマスコーレ',
-    link: 'http://www.cinemaskhole.co.jp/cinema/html',
-    date: '2023年2〜3月予定',
-  },
-  {
     place: '京都',
     name: '出町座',
     link: 'https://demachiza.com/',
     date: '上映時期調整中',
+  },
+  {
+    place: '名古屋',
+    name: 'シネマスコーレ',
+    link: 'http://www.cinemaskhole.co.jp/cinema/html',
+    date: '2023年2〜3月予定',
   },
 ]
 
