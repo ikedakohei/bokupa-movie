@@ -8,7 +8,13 @@ const theaters = [
     place: '東京',
     name: "K's cinema新宿",
     link: 'https://www.ks-cinema.com',
-    date: <span>2022年11月19日(土)〜12月2日(金)<br />2023年1月7日(土)〜1月13日(金) </span>,
+    date: (
+      <span>
+        2022年11月19日(土)〜12月2日(金)
+        <br />
+        2023年1月7日(土)〜1月13日(金){' '}
+      </span>
+    ),
     time: '上映終了',
   },
   {
@@ -16,13 +22,19 @@ const theaters = [
     name: 'シアターセブン',
     link: 'https://www.theater-seven.com',
     date: '2023年1月21日(土)〜1月27日(金)',
-    time: <span className="text-xs">1月21日(土)・22日(日) 18:00から<br />1月23日(月)〜27日(金) 18:50から</span>
+    time: '上映終了',
   },
   {
     place: '名古屋',
     name: 'シネマスコーレ',
     link: 'http://www.cinemaskhole.co.jp/cinema/html',
     date: '2023年2〜3月予定',
+  },
+  {
+    place: '京都',
+    name: '出町座',
+    link: 'https://demachiza.com/',
+    date: '上映時期調整中',
   },
 ]
 

@@ -43,11 +43,9 @@ export const Main = ({ setIsLoading }) => {
         />
         <div className="pb-6 text-center font-kaisei text-2xl leading-8">
           <h2>
-            シアターセブン(大阪)にて
+            2022年11月19日(土)より
             <br />
-            2023年1月21日（土）
-            <br />
-            より上映決定！
+            大好評上映中！
           </h2>
         </div>
         <Image
