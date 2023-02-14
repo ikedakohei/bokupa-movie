@@ -5,6 +5,28 @@ import { Header } from '@/components/Header'
 
 const theaters = [
   {
+    place: '名古屋',
+    name: 'シネマスコーレ',
+    link: 'http://www.cinemaskhole.co.jp/cinema/html',
+    date: '2023年3月18日(土)〜3月24日(金)',
+    time: (
+      <>
+        <div>連日17:30から</div>
+        <div className="mt-4 text-xs text-gray-600">
+          3月18日(土)、3月19日(日)は
+          <br />
+          監督・キャストによる舞台挨拶の予定
+        </div>
+      </>
+    ),
+  },
+  {
+    place: '京都',
+    name: '出町座',
+    link: 'https://demachiza.com/',
+    date: '上映時期調整中',
+  },
+  {
     place: '東京',
     name: "K's cinema新宿",
     link: 'https://www.ks-cinema.com',
@@ -23,18 +45,6 @@ const theaters = [
     link: 'https://www.theater-seven.com',
     date: '2023年1月21日(土)〜1月27日(金)',
     time: '上映終了',
-  },
-  {
-    place: '京都',
-    name: '出町座',
-    link: 'https://demachiza.com/',
-    date: '上映時期調整中',
-  },
-  {
-    place: '名古屋',
-    name: 'シネマスコーレ',
-    link: 'http://www.cinemaskhole.co.jp/cinema/html',
-    date: '2023年2〜3月予定',
   },
 ]
 

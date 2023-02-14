@@ -43,9 +43,11 @@ export const Main = ({ setIsLoading }) => {
         />
         <div className="pb-6 text-center font-kaisei text-2xl leading-8">
           <h2>
-            2022年11月19日(土)より
+            2023年3月18日(土)より
             <br />
-            大好評上映中！
+            シネマスコーレ（名古屋）
+            <br />
+            にて上映決定！
           </h2>
         </div>
         <Image
