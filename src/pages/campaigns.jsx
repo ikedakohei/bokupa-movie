@@ -55,16 +55,10 @@ export default function Campaigns() {
                                 >
                                   店名
                                 </th>
-                                <th
-                                  scope="col"
-                                  className="px-3 py-3.5 text-left text-sm font-normal text-white"
-                                >
-                                  備考
-                                </th>
                               </tr>
                             </thead>
                             <tbody className="divide-y divide-gray-400 bg-white">
-                              {shops.map((shop) => (
+                              {shops.length !== 0 ? shops.map((shop) => (
                                 <tr key={shop.name}>
                                   <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm text-gray-900 sm:pl-6">
                                     {shop.place}
@@ -83,7 +77,11 @@ export default function Campaigns() {
                                     {shop.note}
                                   </td>
                                 </tr>
-                              ))}
+                              )) : (
+                                <tr>
+                                  <td colSpan={2} className="py-3 text-center">準備中...</td>
+                                </tr>
+                              )}
                             </tbody>
                           </table>
                         </div>
