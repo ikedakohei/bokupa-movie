@@ -10,6 +10,7 @@ import { DirectorMessage } from '@/components/DirectorMessage'
 import { Outline } from '@/components/Outline'
 import { Staffs } from '@/components/Staffs'
 import { Casts } from '@/components/Casts'
+import { Twitter } from '@/components/Twitter'
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
@@ -73,6 +74,9 @@ export default function Home() {
           <div ref={staffsRef} />
           <div className="js-show-on-scroll">
             <Staffs />
+          </div>
+          <div className="js-show-on-scroll">
+            <Twitter />
           </div>
         </main>
         <Footer />
