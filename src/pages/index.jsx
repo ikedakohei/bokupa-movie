@@ -1,6 +1,7 @@
 import { useState, useEffect, useLayoutEffect, useRef } from 'react'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
+
 import { scrollFadeIn } from '@/components/scrollFadeIn'
 import { Loader } from '@/components/Loader'
 import { Footer } from '@/components/Footer'
@@ -51,6 +52,7 @@ export default function Home() {
     <>
       <Head>
         <title>映画 『ボクらのホームパーティー』 公式サイト</title>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8" />
       </Head>
       <div>
         {isLoading && <Loader />}
