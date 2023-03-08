@@ -24,7 +24,8 @@ const theaters = [
     place: '京都',
     name: '出町座',
     link: 'https://demachiza.com/',
-    date: '上映時期調整中',
+    date: '2023年5月19日(金)～5月25日(木)',
+    time: '上映時間調整中',
   },
   {
     place: '東京',
