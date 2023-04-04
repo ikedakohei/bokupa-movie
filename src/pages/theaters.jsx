@@ -5,26 +5,24 @@ import { Header } from '@/components/Header'
 
 const theaters = [
   {
-    place: '名古屋',
-    name: 'シネマスコーレ',
-    link: 'http://www.cinemaskhole.co.jp/cinema/html',
-    date: '2023年3月18日(土)〜3月24日(金)',
+    place: '京都',
+    name: '出町座',
+    link: 'https://demachiza.com/',
+    date: '2023年5月19日(金)～5月25日(木)',
     time: (
       <>
-        <div>連日17:30から</div>
+        <div>上映時間調整中</div>
         <div className="mt-4 text-xs text-gray-600">
-          3月18日(土)、3月19日(日)は
-          <br />
-          監督・キャストによる舞台挨拶の予定
+          舞台挨拶・トークイベントを実施予定
         </div>
       </>
     ),
   },
   {
-    place: '京都',
-    name: '出町座',
-    link: 'https://demachiza.com/',
-    date: '2023年5月19日(金)～5月25日(木)',
+    place: '愛知',
+    name: '刈谷日劇',
+    link: 'https://kariyanichigeki.com/',
+    date: '2023年6月23日(金)～6月29日(木)',
     time: (
       <>
         <div>上映時間調整中</div>
@@ -42,7 +40,7 @@ const theaters = [
       <span>
         2022年11月19日(土)〜12月2日(金)
         <br />
-        2023年1月7日(土)〜1月13日(金){' '}
+        2023年1月7日(土)〜1月13日(金)
       </span>
     ),
     time: '上映終了',
@@ -52,6 +50,13 @@ const theaters = [
     name: 'シアターセブン',
     link: 'https://www.theater-seven.com',
     date: '2023年1月21日(土)〜1月27日(金)',
+    time: '上映終了',
+  },
+  {
+    place: '名古屋',
+    name: 'シネマスコーレ',
+    link: 'http://www.cinemaskhole.co.jp/cinema/html',
+    date: '2023年3月18日(土)〜3月24日(金)',
     time: '上映終了',
   },
 ]
