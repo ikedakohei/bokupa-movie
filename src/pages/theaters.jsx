@@ -11,8 +11,8 @@ const theaters = [
     date: '2023年5月19日(金)～5月25日(木)',
     time: (
       <div className="mt-2">
-        <div>5月19日(金) 17時10分～18時30分</div>
-        <div>5月20日(土)～25日(木) 19時05分～20時25分</div>
+        <div>5月19日(金) 17時10分</div>
+        <div>5月20日(土)～25日(木) 19時05分</div>
         <ul className="mt-4 whitespace-normal text-xs text-gray-600">
           <li className="mb-1">
             5月19日(金)上映後に、川野邉監督とキャストで舞台挨拶
