@@ -13,9 +13,11 @@ const theaters = [
       <div className="mt-2">
         <div>5月19日(金) 17時10分～18時30分</div>
         <div>5月20日(土)～25日(木) 19時05分～20時25分</div>
-        <ul className="mt-4 list-none whitespace-normal text-xs text-gray-600">
-          <li>5月19日(金)上映後に、川野邉監督とキャストで舞台挨拶</li>
-          <li>
+        <ul className="mt-4 whitespace-normal text-xs text-gray-600">
+          <li className="mb-1">
+            5月19日(金)上映後に、川野邉監督とキャストで舞台挨拶
+          </li>
+          <li className="mb-1">
             5月20日(土)上映後に、川野邉監督と菅野優香さん(同支社大学 大学院
             グローバル・スタディーズ研究科 教授)でトークイベント
           </li>
