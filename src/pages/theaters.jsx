@@ -46,13 +46,11 @@ const theaters = [
   {
     place: '青森',
     name: '八戸ポータルミュージアム はっち',
-    link: 'https://hacchi.jp/',
+    link: 'https://hacchi.jp/access/',
     date: '2023年7月17日(月・祝)',
     time: (
-      <div className='whitespace-normal'>
-        <div className="mt-4 text-xs text-gray-600">
-          一日限定上映。川野邉監督過去作品『凪』や関連作『泥人』『ぼっち』なども上映予定。詳細なスケジュールは改めて告知致します。トークイベントも実施予定。
-        </div>
+      <div className="whitespace-normal mt-4 text-xs text-gray-600">
+        一日限定上映。川野邉監督過去作品『凪』や関連作『泥人』『ぼっち』なども上映予定。詳細なスケジュールは改めて告知致します。トークイベントも実施予定。
       </div>
     ),
   },
