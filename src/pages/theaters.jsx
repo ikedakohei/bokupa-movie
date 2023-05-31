@@ -5,31 +5,6 @@ import { Header } from '@/components/Header'
 
 const theaters = [
   {
-    place: '京都',
-    name: '出町座',
-    link: 'https://demachiza.com/',
-    date: '2023年5月19日(金)～5月25日(木)',
-    time: (
-      <div className="mt-2">
-        <div>5月19日(金) 17時10分</div>
-        <div>5月20日(土)～25日(木) 19時05分</div>
-        <ul className="mt-4 whitespace-normal text-xs text-gray-600">
-          <li className="mb-1">
-            5月19日(金)上映後に、川野邉監督とキャストで舞台挨拶
-          </li>
-          <li className="mb-1">
-            5月20日(土)上映後に、川野邉監督と菅野優香さん(同支社大学 大学院
-            グローバル・スタディーズ研究科 教授)でトークイベント
-          </li>
-          <li>
-            5月21日(日)上映後に、川野邉監督とシモーヌ深雪さん(シャンソン歌手 /
-            DragQueen)でトークイベント
-          </li>
-        </ul>
-      </div>
-    ),
-  },
-  {
     place: '愛知',
     name: '刈谷日劇',
     link: 'https://kariyanichigeki.com/',
@@ -49,7 +24,7 @@ const theaters = [
     link: 'https://hacchi.jp/access/',
     date: '2023年7月17日(月・祝)',
     time: (
-      <div className="whitespace-normal mt-4 text-xs text-gray-600">
+      <div className="mt-4 whitespace-normal text-xs text-gray-600">
         一日限定上映。川野邉監督過去作品『凪』や関連作『泥人』『ぼっち』なども上映予定。詳細なスケジュールは改めて告知致します。トークイベントも実施予定。
       </div>
     ),
@@ -87,6 +62,17 @@ const theaters = [
     date: (
       <span className="line-through decoration-gray-600">
         2023年3月18日(土)〜3月24日(金)
+      </span>
+    ),
+    time: '上映終了',
+  },
+  {
+    place: '京都',
+    name: '出町座',
+    link: 'https://demachiza.com/',
+    date: (
+      <span className="line-through decoration-gray-600">
+        2023年5月19日(金)～5月25日(木)
       </span>
     ),
     time: '上映終了',

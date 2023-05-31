@@ -43,9 +43,9 @@ export const Main = ({ setIsLoading }) => {
         />
         <div className="pb-6 text-center font-kaisei text-2xl leading-8">
           <h2>
-            2023年5月19日(金)より
+            2023年6月23日(金)より
             <br />
-            京都 出町座
+            愛知 刈谷日劇
             <br />
             にて上映決定！
           </h2>
