@@ -11,7 +11,7 @@ const theaters = [
     date: '2023年6月23日(金)～6月29日(木)',
     time: (
       <>
-        <div>上映時間調整中</div>
+        <div>19:30〜20:50</div>
         <div className="mt-4 text-xs text-gray-600">
           舞台挨拶・トークイベントを実施予定
         </div>
