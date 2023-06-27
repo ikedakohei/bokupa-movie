@@ -25,7 +25,7 @@ const theaters = [
     date: '2023年7月17日(月・祝)',
     time: (
       <>
-      <div className='mt-2'>
+      <div className='mt-2 whitespace-normal'>
         チケットは
         <Link
           href="https://docs.google.com/forms/d/1Yhv41FQwuhLdlEklfLzQR2T_lDzTbMy0d1Bt6Mvsc6s/viewform?edit_requested=true"
