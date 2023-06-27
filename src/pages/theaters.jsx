@@ -24,9 +24,23 @@ const theaters = [
     link: 'https://hacchi.jp/access/',
     date: '2023年7月17日(月・祝)',
     time: (
-      <div className="mt-4 whitespace-normal text-xs text-gray-600">
+      <>
+      <div className='mt-2'>
+        チケットは
+        <Link
+          href="https://docs.google.com/forms/d/1Yhv41FQwuhLdlEklfLzQR2T_lDzTbMy0d1Bt6Mvsc6s/viewform?edit_requested=true"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline font-bold text-red-700"
+        >
+          こちらの専用フォーム
+        </Link>
+        から予約可能です。
+      </div>
+      <div className="mt-2 whitespace-normal text-xs text-gray-600">
         一日限定上映。川野邉監督過去作品『凪』や関連作『泥人』『ぼっち』なども上映予定。詳細なスケジュールは改めて告知致します。トークイベントも実施予定。
       </div>
+      </>
     ),
   },
   {
