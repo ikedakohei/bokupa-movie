@@ -6,7 +6,7 @@ import { Header } from '@/components/Header'
 const theaters = [
   {
     place: '大阪',
-    name: 'すてっぷ (とよなか男女共同参画推進センター)',
+    name: '第16回関西クィア映画祭2023',
     link: 'https://kansai-qff.org/',
     date: '2023年9月18日(月・祝)',
     time: (
