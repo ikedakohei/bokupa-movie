@@ -5,41 +5,14 @@ import { Header } from '@/components/Header'
 
 const theaters = [
   {
-    place: '愛知',
-    name: '刈谷日劇',
-    link: 'https://kariyanichigeki.com/',
-    date: '2023年6月23日(金)～6月29日(木)',
+    place: '大阪',
+    name: 'すてっぷ (とよなか男女共同参画推進センター)',
+    link: 'https://kansai-qff.org/',
+    date: '2023年9月18日(月・祝)',
     time: (
       <>
-        <div>19:30〜20:50</div>
-        <div className="mt-4 text-xs text-gray-600">
-          舞台挨拶・トークイベントを実施予定
-        </div>
-      </>
-    ),
-  },
-  {
-    place: '青森',
-    name: '八戸ポータルミュージアム はっち',
-    link: 'https://hacchi.jp/access/',
-    date: '2023年7月17日(月・祝)',
-    time: (
-      <>
-      <div className='mt-2 whitespace-normal'>
-        チケットは
-        <Link
-          href="https://docs.google.com/forms/d/1Yhv41FQwuhLdlEklfLzQR2T_lDzTbMy0d1Bt6Mvsc6s/viewform?edit_requested=true"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline font-bold text-red-700"
-        >
-          こちらの専用フォーム
-        </Link>
-        から予約可能です。
-      </div>
-      <div className="mt-2 whitespace-normal text-xs text-gray-600">
-        一日限定上映。川野邉監督過去作品『凪』や関連作『泥人』『ぼっち』なども上映予定。詳細なスケジュールは改めて告知致します。トークイベントも実施予定。
-      </div>
+        <div>10:30～</div>
+        <div className="mt-4 text-xs text-gray-600">舞台挨拶を実施予定</div>
       </>
     ),
   },
@@ -87,6 +60,28 @@ const theaters = [
     date: (
       <span className="line-through decoration-gray-600">
         2023年5月19日(金)～5月25日(木)
+      </span>
+    ),
+    time: '上映終了',
+  },
+  {
+    place: '愛知',
+    name: '刈谷日劇',
+    link: 'https://kariyanichigeki.com/',
+    date: (
+      <span className="line-through decoration-gray-600">
+        2023年6月23日(金)～6月29日(木)
+      </span>
+    ),
+    time: '上映終了',
+  },
+  {
+    place: '青森',
+    name: '八戸ポータルミュージアム はっち',
+    link: 'https://hacchi.jp/access/',
+    date: (
+      <span className="line-through decoration-gray-600">
+        2023年7月17日(月・祝)
       </span>
     ),
     time: '上映終了',

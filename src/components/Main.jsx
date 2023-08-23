@@ -43,11 +43,9 @@ export const Main = ({ setIsLoading }) => {
         />
         <div className="pb-6 text-center font-kaisei text-2xl leading-8">
           <h2>
-            2023年6月23日(金)より
+            2022年11月19日(土)
             <br />
-            愛知 刈谷日劇
-            <br />
-            にて上映決定！
+            劇場公開
           </h2>
         </div>
         <Image
