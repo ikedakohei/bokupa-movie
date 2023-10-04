@@ -6,13 +6,13 @@ import { Header } from '@/components/Header'
 const theaters = [
   {
     place: '東京都',
-    name: <span>川野邉修一監督×今井ミカ監督作品上映会<br/>これからの”多様性”の在り方について</span>,
+    name: <span className='text-xs'>川野邉修一監督×今井ミカ監督作品上映会<br/>これからの”多様性”の在り方について</span>,
     link: 'https://www.senshu-u.ac.jp/about/campus/',
     date: '2023年11月11日(土)',
     time: (
       <>
         <div>13:30～</div>
-        <div className="mt-4 text-xs text-gray-600">専修大学・神田キャンパス<br/>東京都千代田区神田神保町3-8<br/>今井ミカ監督・川野邉監督のトークイベントあり</div>
+        <div className="mt-4 text-xs text-gray-600">専修大学・神田キャンパス<br/>東京都千代田区神田神保町3-8<br/>トークイベント予定</div>
       </>
     ),
   },
