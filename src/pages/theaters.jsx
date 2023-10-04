@@ -5,14 +5,26 @@ import { Header } from '@/components/Header'
 
 const theaters = [
   {
-    place: '大阪',
-    name: '第16回関西クィア映画祭2023',
-    link: 'https://kansai-qff.org/',
-    date: '2023年9月18日(月・祝)',
+    place: '東京都',
+    name: <span>川野邉修一監督×今井ミカ監督作品上映会<br/>これからの”多様性”の在り方について</span>,
+    link: 'https://www.senshu-u.ac.jp/about/campus/',
+    date: '2023年11月11日(土)',
     time: (
       <>
-        <div>10:30～</div>
-        <div className="mt-4 text-xs text-gray-600">舞台挨拶を実施予定</div>
+        <div>13:30～</div>
+        <div className="mt-4 text-xs text-gray-600">専修大学・神田キャンパス<br/>東京都千代田区神田神保町3-8<br/>今井ミカ監督・川野邉監督のトークイベントあり</div>
+      </>
+    ),
+  },
+  {
+    place: '東京都',
+    name: "CINEMA Chupki TABATA",
+    link: 'https://chupki.jpn.org/',
+    date: '2023年11月16日(木)～30日(木)',
+    time: (
+      <>
+        <div>19:15～</div>
+        <div className="mt-4 text-xs text-gray-600">＊22日,29日(水)休映<br/>『ボクらのホームパーティー』(80分)<br/>『虹色の朝が来るまで』(63分) 二本立て<br/>※連日舞台挨拶・トークイベントを予定</div>
       </>
     ),
   },
@@ -82,6 +94,17 @@ const theaters = [
     date: (
       <span className="line-through decoration-gray-600">
         2023年7月17日(月・祝)
+      </span>
+    ),
+    time: '上映終了',
+  },
+  {
+    place: '大阪',
+    name: '第16回関西クィア映画祭2023',
+    link: 'https://kansai-qff.org/',
+    date: (
+      <span className="line-through decoration-gray-600">
+        2023年9月18日(月・祝)
       </span>
     ),
     time: '上映終了',
