@@ -5,28 +5,22 @@ import { Header } from '@/components/Header'
 
 const theaters = [
   {
-    place: '東京都',
-    name: <span className='text-xs'>川野邉修一監督×今井ミカ監督作品上映会<br/>これからの”多様性”の在り方について</span>,
-    link: 'https://www.senshu-u.ac.jp/about/campus/',
-    date: '2023年11月11日(土)',
-    time: (
-      <>
-        <div>13:30～</div>
-        <div className="mt-4 text-xs text-gray-600">専修大学・神田キャンパス<br/>東京都千代田区神田神保町3-8<br/>トークイベント予定</div>
-      </>
-    ),
+    place: '北九州',
+    name: "小倉名画座",
+    link: 'https://kokurameigaza.com',
+    date: "2024年1月26日(金)～2月1日(木)",
   },
   {
-    place: '東京都',
-    name: "CINEMA Chupki TABATA",
-    link: 'https://chupki.jpn.org/',
-    date: '2023年11月16日(木)～30日(木)',
-    time: (
-      <>
-        <div>19:15～</div>
-        <div className="mt-4 text-xs text-gray-600">＊22日、29日(水)休映<br/>『ボクらのホームパーティー』(80分)<br/>『虹色の朝が来るまで』(63分) 二本立て<br/>※連日舞台挨拶・トークイベントを予定</div>
-      </>
-    ),
+    place: '東京',
+    name: "シアターギルド",
+    link: 'https://theaterguild.co',
+    date: "2024年2月9日(金)～11日(日)",
+  },
+  {
+    place: '東京',
+    name: "THE REVIVAL HOUSE",
+    link: 'https://www.instagram.com/revival_tokyo/?hl=ja',
+    date: "2024年2月18日(日)",
   },
   {
     place: '東京',
@@ -109,6 +103,27 @@ const theaters = [
     ),
     time: '上映終了',
   },
+  {
+    place: '東京',
+    name: "専修大学・神田キャンパス",
+    link: 'https://www.senshu-u.ac.jp/about/campus/',
+    date: (
+      <span className="line-through decoration-gray-600">2023年11月11日(土)</span>
+    ),
+    time: (
+      <>
+        <div className="my-2 text-xs">川野邉修一監督×今井ミカ監督作品上映会<br/>これからの”多様性”の在り方について</div>
+        <div>上映終了</div>
+      </>
+    ),
+  },
+  {
+    place: '東京',
+    name: "CINEMA Chupki TABATA",
+    link: 'https://chupki.jpn.org/',
+    date: <span className="line-through decoration-gray-600">2023年11月16日(木)～30日(木)</span>,
+    time: '上映終了',
+  },
 ]
 
 export default function Theaters() {
@@ -121,7 +136,7 @@ export default function Theaters() {
         <Header />
         <main>
           <Container className="relative">
-            <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
+            <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12 mb-12">
               <div
                 id="outline"
                 className="space-y-6 pt-4 font-sans text-lg tracking-tight text-gray-900 md:pt-8"
