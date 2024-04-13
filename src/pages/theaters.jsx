@@ -5,24 +5,6 @@ import { Header } from '@/components/Header'
 
 const theaters = [
   {
-    place: '北九州',
-    name: "小倉名画座",
-    link: 'https://kokurameigaza.com',
-    date: "2024年1月26日(金)～2月1日(木)",
-  },
-  {
-    place: '東京',
-    name: "シアターギルド",
-    link: 'https://theaterguild.co',
-    date: "2024年2月9日(金)～11日(日)",
-  },
-  {
-    place: '東京',
-    name: "THE REVIVAL HOUSE",
-    link: 'https://www.instagram.com/revival_tokyo/?hl=ja',
-    date: "2024年2月18日(日)",
-  },
-  {
     place: '東京',
     name: "K's cinema新宿",
     link: 'https://www.ks-cinema.com',
@@ -122,6 +104,27 @@ const theaters = [
     name: "CINEMA Chupki TABATA",
     link: 'https://chupki.jpn.org/',
     date: <span className="line-through decoration-gray-600">2023年11月16日(木)～30日(木)</span>,
+    time: '上映終了',
+  },
+  {
+    place: '北九州',
+    name: "小倉名画座",
+    link: 'https://kokurameigaza.com',
+    date: <span className="line-through decoration-gray-600">2024年1月26日(金)～2月1日(木)</span>,
+    time: '上映終了',
+  },
+  {
+    place: '東京',
+    name: "シアターギルド",
+    link: 'https://theaterguild.co',
+    date: <span className="line-through decoration-gray-600">2024年2月9日(金)～11日(日)</span>,
+    time: '上映終了',
+  },
+  {
+    place: '東京',
+    name: "THE REVIVAL HOUSE",
+    link: 'https://www.instagram.com/revival_tokyo/?hl=ja',
+    date: <span className="line-through decoration-gray-600">2024年2月18日(日)</span>,
     time: '上映終了',
   },
 ]
