@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Image from 'next/future/image'
+import Image from 'next/image'
 
 import { Container } from '@/components/Container'
 import { CastsAndStaffsModal } from '@/components/CastsAndStaffsModal'
@@ -80,8 +80,8 @@ const casts = [
           シーズンに渡ってレギュラー出演した。最近では『六本木クラス』（22/EX）にも出演。
           映画では、石巻の震災を舞台にした『3653の旅』（22/野本梢監督）が池袋シネマロサにて2週間
           上映。4つの短編を同時上映した『Hakushi
-          project』（22/野本梢監督、土屋哲彦監督、加藤大志監
-          督、浅沼直也監督）がK{"'"}s
+          project』（22/野本梢監督、土屋哲彦監
+          督、加藤大志監督、浅沼直也監督）がK{"'"}s
           cinemaにて2022/10/01から2週間上映され、4作品のうち3作品（『you』『再演
           』『いろとりどりの』）にメインで出演した。
         </p>

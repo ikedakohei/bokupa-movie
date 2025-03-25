@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-import Image from 'next/future/image'
+import Image from 'next/image'
 import clsx from 'clsx'
 import { Fragment } from 'react'
 import { Dialog, Transition } from '@headlessui/react'

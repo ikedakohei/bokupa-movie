@@ -1,4 +1,4 @@
-import { useState, useEffect, useLayoutEffect, useRef } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
 
@@ -11,10 +11,10 @@ import { DirectorMessage } from '@/components/DirectorMessage'
 import { Outline } from '@/components/Outline'
 import { Staffs } from '@/components/Staffs'
 import { Casts } from '@/components/Casts'
-// import { Twitter } from '@/components/Twitter'
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
+  const [isClient, setIsClient] = useState(false)
 
   const router = useRouter()
   const mainRef = useRef(null)
@@ -22,13 +22,19 @@ export default function Home() {
   const castsRef = useRef(null)
   const staffsRef = useRef(null)
 
-  useLayoutEffect(() => {
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
+
+  useEffect(() => {
+    if (!isClient) return
+
     document.querySelector('body').classList.add('overflow-hidden')
 
     if (!isLoading) {
       document.querySelector('body').classList.remove('overflow-hidden')
     }
-  }, [isLoading])
+  }, [isLoading, isClient])
 
   useEffect(() => {
     if (isLoading === true) return
@@ -52,7 +58,6 @@ export default function Home() {
     <>
       <Head>
         <title>映画 『ボクらのホームパーティー』 公式サイト</title>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8" />
       </Head>
       <div>
         {isLoading && <Loader />}
@@ -77,9 +82,6 @@ export default function Home() {
           <div className="js-show-on-scroll">
             <Staffs />
           </div>
-          {/* <div className="js-show-on-scroll">
-            <Twitter />
-          </div> */}
         </main>
         <Footer />
       </div>

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { Popover } from '@headlessui/react'
 import { AnimatePresence, motion } from 'framer-motion'
-import Image from 'next/future/image'
+import Image from 'next/image'
 import mainLogo from '@/images/main-logo.webp'
 import { NavLinks } from '@/components/NavLinks'
 

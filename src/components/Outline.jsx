@@ -1,5 +1,5 @@
 import { Container } from '@/components/Container'
-import Image from 'next/future/image'
+import Image from 'next/image'
 import outline1Image from '@/images/outline1.webp'
 import outline2Image from '@/images/outline2.webp'
 import outline3Image from '@/images/outline3.webp'

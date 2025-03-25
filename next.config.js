@@ -4,10 +4,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  experimental: {
-    newNextLinkBehavior: true,
-    scrollRestoration: true,
-  },
 }
 
 module.exports = nextConfig
