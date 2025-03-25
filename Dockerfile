@@ -1,4 +1,4 @@
-FROM node:16-alpine
+FROM node:22-alpine
 RUN apk add curl
 
 RUN mkdir /bokupa-movie
